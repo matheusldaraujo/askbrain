@@ -22,7 +22,8 @@ grails.project.fork = [
     console: [maxMemory: 768, minMemory: 64, debug: false, maxPerm: 256]
 ]
 
-grails.plugin.location.gurk = "../gTurkPlugin"
+//grails.plugin.location.gurk = "../gTurkPlugin"
+grails.plugin.location.gwurk = "lib/grails-gwurk-0.1"
 grails.project.dependency.resolver = "maven" // or ivy
 grails.project.dependency.resolution = {
     // inherit Grails' default dependencies
@@ -72,4 +73,5 @@ grails.project.dependency.resolution = {
         //runtime ":cached-resources:1.1"
         //runtime ":yui-minify-resources:0.1.5"
     }
+
 }

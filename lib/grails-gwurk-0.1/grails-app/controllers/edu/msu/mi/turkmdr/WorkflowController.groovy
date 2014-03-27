@@ -2,7 +2,7 @@ package edu.msu.mi.turkmdr
 
 class WorkflowController {
 
-     def mturkMonitorService
+    def mturkMonitorService
 
     def index() {}
 
@@ -18,7 +18,7 @@ class WorkflowController {
 
     def doLaunch() {
         Workflow w = flash.workflow
-
+        println(params)
         mturkMonitorService.launch(w,params.type=="real",params.iterations as int,Credentials.get(params.credentials as long), params.props as Map)
         redirect(action:"index",controller:"workflowRun")
     }

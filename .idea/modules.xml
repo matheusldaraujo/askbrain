@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/gwurk-demo.iml" filepath="$PROJECT_DIR$/gwurk-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/askBrain_git.iml" filepath="$PROJECT_DIR$/askBrain_git.iml" />
+      <module fileurl="file://$PROJECT_DIR$/askBrain_git-grailsPlugins.iml" filepath="$PROJECT_DIR$/askBrain_git-grailsPlugins.iml" />
       <module fileurl="file://$PROJECT_DIR$/gwurk-inplacePlugin.iml" filepath="$PROJECT_DIR$/gwurk-inplacePlugin.iml" />
     </modules>
   </component>

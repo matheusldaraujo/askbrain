@@ -44,17 +44,22 @@
     <table>
         <tr>
             <td>
-                Name:<g:textField name="name"/>
+                Name:<g:textField name="name" value="matheus"/>
             </td>
             <td>
-                Aws ID:<g:textField name="awsId"/>
+                Aws ID:<g:textField name="awsId" value="AKIAIBUJ2GWH7GCFPF4A"/>
             </td>
             <td>
-                Aws Secret:<g:passwordField name="awsSecret"/>
+                Aws Secret:<g:passwordField name="awsSecret" value="KcVscVzpQ+TIXma5CMr0uyySwfwc944mT6KfKyxN"/>
             </td>
         </tr>
     </table>
+    <div>
     <g:submitButton name="Submit" value="Add new credential"/>
+    </div>
+    <div>
+    <a href="javascript:window.history.back()">Back</a>
+    </div>
 </g:form>
 
 </body>

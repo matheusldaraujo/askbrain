@@ -20,7 +20,11 @@ class DemographicsController {
     }
 
     def create() {
-        respond new Demographics(params)
+        print("===============================")
+        def demographic = new Demographics(params)
+        print(demographic)
+        print(params)
+        respond demographic
     }
 
     @Transactional

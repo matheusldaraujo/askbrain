@@ -1,3 +1,9 @@
 #questionField{
     width: 50%;
 }
+#workflow_data{
+    display:none;
+}
+.question{
+    text-align: center;
+}

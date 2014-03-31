@@ -12,6 +12,6 @@
 </head>
 
 <body>
-
+<g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link>
 </body>
 </html>

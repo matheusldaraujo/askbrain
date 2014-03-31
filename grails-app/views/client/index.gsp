@@ -15,23 +15,23 @@
 <body>
 <h1>Hi Client</h1>
 <div>
-    Log in
-    <br/>
-    Sign up
+    <div>
+        <a href="#">Log in</a>
+    </div>
+    <div>
+        <a href="#"> Sign up </a>
+    </div>
+
 </div>
 <div>
     <g:form action="begin_question">
         <div>
             <g:textField id="questionField" name="question"/>
         </div>
-        <div>
+    <input type="button" onclick="document.getElementById('Launch').click()" value="Ask me" />
 
 
-        </div>
-
-
-
-
+<div id="workflow_data" >
     <g:set var="workflow" value="${Workflow.first()}"/>
     <h1>Launch Workflow: ${workflow.name}</h1>
     <p>
@@ -54,7 +54,7 @@
         <g:submitButton name="Launch" value="Ask me"/>
         <g:actionSubmit action="index" value="Cancel"/>
     </g:form>
-
+</div>
 
 </div>
 </body>

@@ -12,26 +12,35 @@ class TurkerController {
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
     def index(Integer max) {
+        print("Turker Controller: index")
         params.max = Math.min(max ?: 10, 100)
         respond Answer.list(params), model:[AnswerInstanceCount: Answer.count()]
     }
 
     def show(Answer answerInstance) {
+        print("Turker Controller: show")
         respond answerInstance
     }
 
-    def create() {
-        print("===============================")
+    def createAskHit() {
+        print("Turker Controller: createAskHit")
         //Get Answer to anserwer
         def question = Question.findAll{ answered == false}.first()
-        //Create Answer
-        def newAnswer = new Answer(params)
 
-        ["question" : question, "newAnswer": newAnswer]
+        ["question" : question]
+    }
+
+    def createMixerHit() {
+        print("Turker Controller: createMixerHit")
+        //Get Answer to anserwer
+        def question = Question.findByAnsweredAndMixed(true,false)
+
+        ["question" : question, "answers": question.getAnswers()]
     }
 
     @Transactional
     def save(Answer answerInstance) {
+        print("Turker Controller: save")
         if (answerInstance == null) {
             notFound()
             print("----------")
@@ -56,11 +65,13 @@ class TurkerController {
     }
 
     def edit(Answer answerInstance) {
+        print("Turker Controller: edit")
         respond answerInstance
     }
 
     @Transactional
     def update(Answer answerInstance) {
+        print("Turker Controller: update")
         if (answerInstance == null) {
             notFound()
             return
@@ -84,7 +95,7 @@ class TurkerController {
 
     @Transactional
     def delete(Answer answerInstance) {
-
+        print("Turker Controller: delete")
         if (answerInstance == null) {
             notFound()
             return
@@ -102,6 +113,7 @@ class TurkerController {
     }
 
     protected void notFound() {
+        print("Turker Controller: notFound")
         request.withFormat {
             form {
                 flash.message = message(code: 'default.not.found.message', args: [message(code: 'answerInstance.label', default: 'Answer'), params.id])

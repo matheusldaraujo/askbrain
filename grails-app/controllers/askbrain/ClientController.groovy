@@ -1,7 +1,7 @@
 package askbrain
 
-import edu.msu.mi.turkmdr.Credentials
-import edu.msu.mi.turkmdr.Workflow
+import edu.msu.mi.gwurk.Credentials
+import edu.msu.mi.gwurk.Workflow
 
 
 class ClientController {

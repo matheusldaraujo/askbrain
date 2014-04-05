@@ -5,13 +5,15 @@
   Time: 7:02 PM
 --%>
 
-<%@ page import="askbrain.ClientInteractionController" contentType="text/html;charset=UTF-8" %>
+<%@ page import="" contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
     <title></title>
 </head>
 
 <body>
-<g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link>
+    <g:link class="create" action="create">
+        <g:message code="default.new.label" args="[entityName]" />
+    </g:link>
 </body>
 </html>

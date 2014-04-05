@@ -1,12 +1,14 @@
-import edu.msu.mi.turkmdr.AssignmentView
-import edu.msu.mi.turkmdr.GwurkEvent
-import edu.msu.mi.turkmdr.GwurkEvent
-import edu.msu.mi.turkmdr.HitView
-import edu.msu.mi.turkmdr.SingleHitTask
-import edu.msu.mi.turkmdr.Task
-import edu.msu.mi.turkmdr.TaskRun
-import edu.msu.mi.turkmdr.Workflow
-import edu.msu.mi.turkmdr.WorkflowRun
+import askbrain.Answer
+import askbrain.Question
+import edu.msu.mi.gwurk.AssignmentView
+import edu.msu.mi.gwurk.GwurkEvent
+import edu.msu.mi.gwurk.GwurkEvent
+import edu.msu.mi.gwurk.HitView
+import edu.msu.mi.gwurk.SingleHitTask
+import edu.msu.mi.gwurk.Task
+import edu.msu.mi.gwurk.TaskRun
+import edu.msu.mi.gwurk.Workflow
+import edu.msu.mi.gwurk.WorkflowRun
 import groovy.util.logging.Log4j
 import gturkplugintester.Demographics
 import gturkplugintester.Interests
@@ -62,15 +64,24 @@ class BootStrap {
 
                 case GwurkEvent.Type.HIT_COMPLETE:
                     log.info("Hit complete!")
+                    println "Hit Complete"
                     break
                 case GwurkEvent.Type.ASSIGNMENT_COMPLETE:
                     log.info("Assignment complete!")
+                    println "Assigment Complete"
+                    def turkerAnswer = evt.assignmentView.answer
                     println evt.assignmentView.answer
-                    new Demographics(evt.assignmentView.answer).save()
+
+                    print "Saving Answer"
+                    def ans = new Answer()
+                    ans.saveAnswerFromTurk(turkerAnswer)
+
                     break
 
                 case GwurkEvent.Type.TASK_COMPLETE:
                     log.info("Task complete!")
+                    println "Task Complete"
+                    println "Task Complete"
                     break
             }
 

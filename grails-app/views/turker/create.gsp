@@ -38,6 +38,7 @@
 
         <g:form action="save">
                 <g:textField name="answer" />
+                <g:hiddenField name="question_id" value="${question.getId()}" />
                 <g:submitButton name="Submit" />
         </g:form>
     </div>

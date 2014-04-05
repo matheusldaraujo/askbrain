@@ -1,4 +1,5 @@
 import askbrain.Answer
+import askbrain.MixedAnswer
 import askbrain.Question
 import edu.msu.mi.gwurk.AssignmentView
 import edu.msu.mi.gwurk.Credentials
@@ -63,7 +64,7 @@ class BootStrap {
                     def turkerAnswer = evt.assignmentView.answer
                     println evt.assignmentView.answer
 
-                    print "Saving Answer"
+
                     def ans = new Answer()
                     ans.saveAnswerFromTurk(turkerAnswer)
 
@@ -116,13 +117,13 @@ class BootStrap {
                     break
                 case GwurkEvent.Type.ASSIGNMENT_COMPLETE:
                     log.info("Assignment complete!")
-                    println "Mixer Task:Assigment Complete"
+                    println "Mixer Task: Assigment Complete"
                     def turkerAnswer = evt.assignmentView.answer
                     println evt.assignmentView.answer
 
-                    print "Saving Answer"
-                    def ans = new Answer()
-                    ans.saveAnswerFromTurk(turkerAnswer)
+
+                    def mixed_ans = new MixedAnswer()
+                    mixed_ans.saveMixedAnswerFromTurk(turkerAnswer)
 
 
                     break
@@ -141,9 +142,9 @@ class BootStrap {
 
     def throwTurkerMixerHits(turkerAnswer){
         //       Steps to Lunch Hits
-        print "Throwing mixer Hits"
+        print "Throwing mixer hits"
         def w = Workflow.findByName('Turker Mixer Workflow')
-        println("Client question: \"$turkerAnswer.answer\"")
+        println("Turker Answer: \"$turkerAnswer.answer\"")
         println(Workflow.list())
         mturkMonitorService.launch(w,turkerAnswer.type=="real",turkerAnswer.iterations as int,Credentials.get(turkerAnswer.credentials as long), turkerAnswer.props as Map)
     }

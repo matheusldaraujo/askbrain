@@ -11,7 +11,7 @@ class MturkMonitorService {
 
     Timer heartBeat;
     boolean running
-    long pauseTime = 20000l
+    long pauseTime = 5000l
     def listeners = [] as Set<BeatListener>
 
     def init() {

@@ -38,7 +38,7 @@
 
 
         <g:form action="save">
-            <g:textField name="additional_answer" />
+            <g:textField name="additionalAnswer" />
 
             <h4>Please mix your answer with these sentences:</h4>
 

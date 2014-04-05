@@ -5,7 +5,7 @@
   Time: 7:04 PM
 --%>
 
-<%@ page import="askbrain.ClientInteractionController;  edu.msu.mi.turkmdr.Workflow;edu.msu.mi.turkmdr.Credentials;" contentType="text/html;charset=UTF-8" %>
+<%@ page import="  edu.msu.mi.gwurk.Workflow; edu.msu.mi.gwurk.Credentials;" contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
     <title>Ask Brain</title>

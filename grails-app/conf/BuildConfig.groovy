@@ -23,7 +23,7 @@ grails.project.fork = [
 ]
 
 //grails.plugin.location.gurk = "../gTurkPlugin"
-grails.plugin.location.gwurk = "lib/grails-gwurk-0.1"
+grails.plugin.location.gwurk = "lib/grails-gwurk-0.2"
 grails.project.dependency.resolver = "maven" // or ivy
 grails.project.dependency.resolution = {
     // inherit Grails' default dependencies

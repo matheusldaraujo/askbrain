@@ -1,4 +1,5 @@
-<%@ page import="askbrain.Question" %>
+
+<%@ page import="edu.msu.mi.gwurk.Workflow; edu.msu.mi.gwurk.Credentials;" contentType="text/html;charset=UTF-8" %>
 
 <!DOCTYPE html>
 <html>
@@ -40,6 +41,35 @@
                 <g:textField name="answer" />
                 <g:hiddenField name="question_id" value="${question.getId()}" />
                 <g:submitButton name="Submit" />
+
+
+
+
+        <div id="workflow_data" >
+            <g:set var="workflow" value="${Workflow.findByName('Turker Mixer Workflow')}"/>
+            <h1>Launch Workflow: ${workflow.name}</h1>
+            <p>
+                <b>Description:</b>${workflow.description}
+            </p>
+
+            <p>
+
+                Type of run? <g:select from="${["sandbox","real"]}" name="type" value="sandbox"/> <br/>
+                Iterations?  <g:field name="iterations" type="number" value="1"/><br/>
+                Credentials? <g:select name="credentials" from="${Credentials.list()}" optionKey="id" optionValue="name"/><br/>
+
+            </p>
+            <h2>Global Properties</h2>
+            <g:render template="/taskPropertiesForm" model="${[prefix:"global",props:workflow.taskProperties]}"/>
+            <g:each in="${workflow.allTasks.values()}" var="task">
+                <h2>Task Properties: ${task.name}</h2>
+                <g:render template="/taskPropertiesForm" model="${[prefix:task.name,props:task.taskProperties]}"/>
+            </g:each>
+            <g:submitButton name="Launch" value="Ask me"/>
+            <g:actionSubmit action="index" value="Cancel"/>
+
+        </div>
+
         </g:form>
     </div>
 

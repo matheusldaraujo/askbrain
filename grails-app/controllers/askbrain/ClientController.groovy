@@ -14,8 +14,8 @@ class ClientController {
         q.setQuestion(params.question)
         q.save()
 
-//       Steps to Lunch Workflow
-        def w = Workflow.first()
+//       Steps to Lunch Hits
+        def w = Workflow.findByName("Question Workflow")
         println("Client question: \"$params.question\"")
         println(Workflow.list())
         mturkMonitorService.launch(w,params.type=="real",params.iterations as int,Credentials.get(params.credentials as long), params.props as Map)

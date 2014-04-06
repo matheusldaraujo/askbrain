@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e60fde8-e8b3-4c68-be18-dc824fd11b67" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/askbrain/Answer.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/askbrain/Answer.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/grails-gwurk-0.2/grails-app/services/edu/msu/mi/gwurk/MturkMonitorService.groovy" afterPath="$PROJECT_DIR$/lib/grails-gwurk-0.2/grails-app/services/edu/msu/mi/gwurk/MturkMonitorService.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/askbrain/Question.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/askbrain/Question.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/askbrain/TurkerController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/askbrain/TurkerController.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/turker/createMixerHit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/turker/createMixerHit.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gwurk-demo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -19,6 +17,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -76,7 +79,7 @@
       <file leaf-file-name="BootStrap.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="19" selection-start="2441" selection-end="2441" vertical-scroll-proportion="0.0" vertical-offset="766" max-vertical-offset="2610">
+            <state line="190" column="21" selection-start="7175" selection-end="7175" vertical-scroll-proportion="0.0" vertical-offset="2670" max-vertical-offset="3906">
               <folding />
             </state>
           </provider>
@@ -91,10 +94,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MixedAnswer.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MixedAnswer.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/askbrain/MixedAnswer.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="575" selection-end="575" vertical-scroll-proportion="0.6737968" vertical-offset="108" max-vertical-offset="558">
+            <state line="20" column="0" selection-start="575" selection-end="575" vertical-scroll-proportion="-10.08" vertical-offset="108" max-vertical-offset="558">
               <folding />
             </state>
           </provider>
@@ -103,7 +106,7 @@
       <file leaf-file-name="createMixerHit.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/turker/createMixerHit.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="46" selection-start="1956" selection-end="1956" vertical-scroll-proportion="-2.0769231" vertical-offset="702" max-vertical-offset="1692">
+            <state line="57" column="81" selection-start="0" selection-end="3475" vertical-scroll-proportion="-3.1153846" vertical-offset="864" max-vertical-offset="1692">
               <folding />
             </state>
           </provider>
@@ -127,19 +130,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MturkMonitorService.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.2/grails-app/services/edu/msu/mi/gwurk/MturkMonitorService.groovy">
+      <file leaf-file-name="TurkerController.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/askbrain/TurkerController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="0" selection-start="2383" selection-end="2383" vertical-scroll-proportion="-12.933333" vertical-offset="1286" max-vertical-offset="1926">
+            <state line="45" column="30" selection-start="1409" selection-end="1409" vertical-scroll-proportion="-6.96" vertical-offset="546" max-vertical-offset="2412">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="createAskHit.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/turker/createAskHit.gsp">
+      <file leaf-file-name="createRankerHit.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/turker/createRankerHit.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="30" selection-start="1743" selection-end="1743" vertical-scroll-proportion="-4.1538463" vertical-offset="486" max-vertical-offset="1530">
+            <state line="39" column="30" selection-start="1739" selection-end="1739" vertical-scroll-proportion="-2.8269231" vertical-offset="555" max-vertical-offset="1170">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MturkMonitorService.groovy" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.2/grails-app/services/edu/msu/mi/gwurk/MturkMonitorService.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="92" column="19" selection-start="2274" selection-end="2274" vertical-scroll-proportion="0.4410876" vertical-offset="1456" max-vertical-offset="1944">
               <folding />
             </state>
           </provider>
@@ -202,15 +214,16 @@
         <option value="$PROJECT_DIR$/grails-app/views/client/index.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/turker/create.gsp" />
         <option value="$PROJECT_DIR$/grails-app/controllers/askbrain/ClientController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/askbrain/TurkerController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/turker/createMixerHits.gsp" />
         <option value="$PROJECT_DIR$/grails-app/domain/askbrain/MixedAnser.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/turker/createMixerHit.gsp" />
         <option value="$PROJECT_DIR$/grails-app/domain/askbrain/Question.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/askbrain/Answer.groovy" />
-        <option value="$PROJECT_DIR$/lib/grails-gwurk-0.2/grails-app/services/edu/msu/mi/gwurk/MturkMonitorService.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/askbrain/MixedAnswer.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/turker/createMixerHit.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/askbrain/TurkerController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/turker/createRankerHit.gsp" />
         <option value="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
+        <option value="$PROJECT_DIR$/lib/grails-gwurk-0.2/grails-app/services/edu/msu/mi/gwurk/MturkMonitorService.groovy" />
       </list>
     </option>
   </component>
@@ -929,12 +942,12 @@
       <workItem from="1396683903605" duration="1000" />
       <workItem from="1396720598307" duration="9664000" />
       <workItem from="1396731734355" duration="1122000" />
-      <workItem from="1396732933030" duration="4934000" />
+      <workItem from="1396732933030" duration="15293000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78495000" />
+    <option name="totallyTimeSpent" value="88854000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1021,13 +1034,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/askbrain/TurkerController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="8" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="2142">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/turker/createAskHit.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="76" selection-start="1788" selection-end="1788" vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="990">
@@ -1229,13 +1235,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/turker/createAskHit.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="30" selection-start="1743" selection-end="1743" vertical-scroll-proportion="-4.1538463" vertical-offset="486" max-vertical-offset="1530">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.2/grails-app/domain/edu/msu/mi/gwurk/Workflow.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="47" selection-start="421" selection-end="421" vertical-scroll-proportion="0.35019454" vertical-offset="162" max-vertical-offset="954">
@@ -1264,13 +1263,6 @@
       </provider>
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/askbrain/TurkerController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="22" selection-start="940" selection-end="954" vertical-scroll-proportion="-15.12" vertical-offset="108" max-vertical-offset="2268">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/askbrain/ClientController.groovy">
@@ -1304,13 +1296,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.2/grails-app/services/edu/msu/mi/gwurk/MturkMonitorService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="0" selection-start="2383" selection-end="2383" vertical-scroll-proportion="-12.933333" vertical-offset="1286" max-vertical-offset="1926">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/askbrain/Question.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="33" selection-start="96" selection-end="96" vertical-scroll-proportion="-3.6" vertical-offset="0" max-vertical-offset="396">
@@ -1321,28 +1306,56 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/askbrain/MixedAnswer.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="575" selection-end="575" vertical-scroll-proportion="-10.08" vertical-offset="108" max-vertical-offset="558">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/turker/createAskHit.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="30" selection-start="1743" selection-end="1743" vertical-scroll-proportion="-1.0384616" vertical-offset="648" max-vertical-offset="1530">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/turker/createMixerHit.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="46" selection-start="1956" selection-end="1956" vertical-scroll-proportion="-2.0769231" vertical-offset="702" max-vertical-offset="1692">
+        <state line="57" column="81" selection-start="0" selection-end="3475" vertical-scroll-proportion="-3.1153846" vertical-offset="864" max-vertical-offset="1692">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/askbrain/TurkerController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="30" selection-start="1409" selection-end="1409" vertical-scroll-proportion="-6.96" vertical-offset="546" max-vertical-offset="2412">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/turker/createRankerHit.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="30" selection-start="1739" selection-end="1739" vertical-scroll-proportion="-2.8269231" vertical-offset="555" max-vertical-offset="1170">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="19" selection-start="2441" selection-end="2441" vertical-scroll-proportion="0.0" vertical-offset="766" max-vertical-offset="2610">
+        <state line="190" column="21" selection-start="7175" selection-end="7175" vertical-scroll-proportion="0.0" vertical-offset="2670" max-vertical-offset="3906">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/askbrain/MixedAnswer.groovy">
+    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.2/grails-app/services/edu/msu/mi/gwurk/MturkMonitorService.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="575" selection-end="575" vertical-scroll-proportion="0.6737968" vertical-offset="108" max-vertical-offset="558">
+        <state line="92" column="19" selection-start="2274" selection-end="2274" vertical-scroll-proportion="0.4410876" vertical-offset="1456" max-vertical-offset="1944">
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
       </provider>
     </entry>
   </component>

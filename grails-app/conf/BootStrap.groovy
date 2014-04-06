@@ -25,6 +25,7 @@ class BootStrap {
     def init = { servletContext ->
         createAskWorkflow()
         createTurkerMixerWorkflow()
+        createTurkerRankerWorkflow()
     }
 
     def createAskWorkflow(){
@@ -124,7 +125,7 @@ class BootStrap {
 
                     def mixed_ans = new MixedAnswer()
                     mixed_ans.saveMixedAnswerFromTurk(turkerAnswer)
-
+                    throwTurkerRankerHits(turkerAnswer)
 
                     break
 
@@ -140,15 +141,86 @@ class BootStrap {
         }
     }
 
-    def throwTurkerMixerHits(turkerAnswer){
-        //       Steps to Lunch Hits
-        print "Throwing mixer hits"
-        def w = Workflow.findByName('Turker Mixer Workflow')
-        println("Turker Answer: \"$turkerAnswer.answer\"")
-        println(Workflow.list())
-        mturkMonitorService.launch(w,turkerAnswer.type=="real",turkerAnswer.iterations as int,Credentials.get(turkerAnswer.credentials as long), turkerAnswer.props as Map)
-    }
+    def createTurkerRankerWorkflow(){
+        Workflow ranker_workflow = new Workflow("Turker Ranker Workflow", "Ask turkers simple questions", [
+                //                TODO: Review and fill a good set for askbrain
+                rewardAmount: 0.03f,
+                relaunchInterval: 1000 * 60 * 60,
+                autoApprove: true,
+                lifetime: 60 * 60 * 10,
+                assignmentDuration: 60,
+                keywords: "survey, demographics, research",
+                maxAssignments: 1,
+                height: 1000,
+                requireApproval: false
+        ])
 
-    def destroy = {
+        Task ranker_task = new SingleHitTask("RankerTask", [
+                controller: "turker",
+                action: "createRankerHit",
+                title: "Give a grade to 3 answers of one question",
+                description: "This a survey you need to simply answer a question in a paragraph.",
+        ]).save()
+
+        ranker_workflow.initStartingTasks(ranker_task)
+        ranker_workflow.save()
+
+        mturkTaskService.installTask(ranker_task) { type, GwurkEvent evt ->
+            switch (type) {
+
+                case GwurkEvent.Type.HIT_COMPLETE:
+                    log.info("Hit complete!")
+                    println "Ranker Task: Hit Complete"
+                    break
+                case GwurkEvent.Type.ASSIGNMENT_COMPLETE:
+                    log.info("Assignment complete!")
+                    println "Ranker Task: Assigment Complete"
+                    def turkerAnswer = evt.assignmentView.answer
+                    println evt.assignmentView.answer
+
+                    println "Saving Ranker Results"
+                    turkerAnswer.each() {
+                        key, value ->
+                            if(key.contains("grade_")) {
+                                def mixedAnswerId = key.split("grade_")[1]
+                                def mixed_answer = MixedAnswer.get(mixedAnswerId)
+                                mixed_answer.setRankValue(value.toInteger())
+                                mixed_answer.question.setRanked(true)
+                            }
+
+                    };
+                    break
+
+                case GwurkEvent.Type.TASK_COMPLETE:
+                    log.info("Task complete!")
+                    println "Ranker Task:Task Complete"
+                    break
+            }
+        }
+
+    mturkTaskService.installWorkflow(ranker_workflow) { a,b->
+        log.info("Workflow complete!")
     }
+}
+
+def throwTurkerMixerHits(turkerAnswer){
+    //       Steps to Lunch Hits
+    print "Throwing mixer hits"
+    def w = Workflow.findByName('Turker Mixer Workflow')
+    println("Turker Answer: \"$turkerAnswer.answer\"")
+    println(Workflow.list())
+    mturkMonitorService.launch(w,turkerAnswer.type=="real",turkerAnswer.iterations as int,Credentials.get(turkerAnswer.credentials as long), turkerAnswer.props as Map)
+}
+
+def throwTurkerRankerHits(turkerAnswer){
+    //       Steps to Lunch Hits
+    print "Throwing ranker hits"
+    def w = Workflow.findByName('Turker Ranker Workflow')
+    println("Turker Answer: \"$turkerAnswer.mixedAnswer\"")
+    println(Workflow.list())
+    mturkMonitorService.launch(w,turkerAnswer.type=="real",turkerAnswer.iterations as int,Credentials.get(turkerAnswer.credentials as long), turkerAnswer.props as Map)
+}
+
+def destroy = {
+}
 }

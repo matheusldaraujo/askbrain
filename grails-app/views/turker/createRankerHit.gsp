@@ -38,47 +38,18 @@
 
 
         <g:form action="save">
-            <g:textField name="additionalAnswer" />
 
             <h4>Please mix your answer with these sentences:</h4>
 
-            <g:each var="answer" in="${answers}">
-                <h2>${answer.getAnswer()}</h2>
+            <g:each var="mixedAnswer" in="${mixedAnswers}">
+                <h2>${mixedAnswer.getMixedAnswer()}</h2>
+                <g:textField name="grade_${mixedAnswer.getId()}"></g:textField>
             </g:each>
 
-            <g:textArea name="mixedAnswer"></g:textArea>
+
 
             <g:hiddenField name="question_id" value="${question.getId()}" />
             <g:submitButton name="Submit" />
-
-
-
-
-            <div id="workflow_data" >
-                <g:set var="workflow" value="${Workflow.findByName('Turker Ranker Workflow')}"/>
-                <h1>Launch Workflow: ${workflow.name}</h1>
-                <p>
-                    <b>Description:</b>${workflow.description}
-                </p>
-
-                <p>
-
-                    Type of run? <g:select from="${["sandbox","real"]}" name="type" value="sandbox"/> <br/>
-                    Iterations?  <g:field name="iterations" type="number" value="1"/><br/>
-                    Credentials? <g:select name="credentials" from="${Credentials.list()}" optionKey="id" optionValue="name"/><br/>
-
-                </p>
-                <h2>Global Properties</h2>
-                <g:render template="/taskPropertiesForm" model="${[prefix:"global",props:workflow.taskProperties]}"/>
-                <g:each in="${workflow.allTasks.values()}" var="task">
-                    <h2>Task Properties: ${task.name}</h2>
-                    <g:render template="/taskPropertiesForm" model="${[prefix:task.name,props:task.taskProperties]}"/>
-                </g:each>
-                <g:submitButton name="Launch" value="Ask me"/>
-                <g:actionSubmit action="index" value="Cancel"/>
-
-            </div>
-
         </g:form>
     </div>
 

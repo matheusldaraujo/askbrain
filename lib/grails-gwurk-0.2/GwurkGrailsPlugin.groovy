@@ -55,6 +55,7 @@ Gwurk is a simple level of abstraction upon Amazon's horrendously awful Java API
 
     def doWithApplicationContext = { ctx ->
         ctx.mturkMonitorService.init()
+        ctx.askBrainMonitorService.init()
 
 
     }

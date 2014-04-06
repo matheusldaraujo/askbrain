@@ -2,13 +2,16 @@ package askbrain
 
 class MixedAnswer {
 
+    def askBrainWorkflowService
+
     static constraints = {
 //        TODO: Increase Answer space, not just varchar(255)
     }
 
-    int rankValue = 0;
+    static hasMany = [rankValue: Integer]
     String mixedAnswer;
     String additionalAnswer;
+    Boolean ranked = false;
 
     static belongsTo = [question:Question];
 
@@ -18,8 +21,14 @@ class MixedAnswer {
         this.setQuestion(question)
         this.setAdditionalAnswer(turkerAnswer.additionalAnswer)
         this.setMixedAnswer(turkerAnswer.mixedAnswer)
-
-        question.setMixed(true)
         this.save()
+
+        if (question.getMixedAnswers().size() == askBrainWorkflowService.mixedAnswers){
+            askBrainWorkflowService.throwTurkerRankerHits(turkerAnswer)
+            question.setMixed(true)
+        }
+
+
+
     }
 }

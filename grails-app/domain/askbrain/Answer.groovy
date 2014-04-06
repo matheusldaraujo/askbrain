@@ -1,6 +1,7 @@
 package askbrain
 
 class Answer {
+    def askBrainWorkflowService
 
     static constraints = {
 //        TODO: Increase Answer space, not just varchar(255)
@@ -14,7 +15,14 @@ class Answer {
         def question = Question.get(turkerAnswer.question_id)
         this.setQuestion(question)
         this.setAnswer(turkerAnswer.answer)
-        question.setAnswered(true)
         this.save()
+
+        if (question.getAnswers().size() == askBrainWorkflowService.simpleAnswers){
+            print "Question: '" + question.getQuestion() + "' answered!"
+            question.setAnswered(true)
+
+            askBrainWorkflowService.throwTurkerMixerHits(turkerAnswer)
+        }
+
     }
 }

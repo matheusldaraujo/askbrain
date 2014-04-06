@@ -20,6 +20,14 @@ grails.project.fork = [
     war: [maxMemory: 768, minMemory: 64, debug: false, maxPerm: 256, forkReserve:false],
     // configure settings for the Console UI JVM
     console: [maxMemory: 768, minMemory: 64, debug: false, maxPerm: 256]
+
+]
+
+
+// AskBrain: Enable Debug and Breakpoints
+grails.project.fork = [
+        test: false,
+        run: false
 ]
 
 //grails.plugin.location.gurk = "../gTurkPlugin"

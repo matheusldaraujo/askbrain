@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e60fde8-e8b3-4c68-be18-dc824fd11b67" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/askbrain/Answer.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/askbrain/Answer.groovy" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/askbrain/ClientInteractionControllerSpec.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/askbrain/FirstQuestionSpec.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/askbrain/TurkerInteractionControllerSpec.groovy" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/services/askbrain/AskBrainWorkflowService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/askbrain/AskBrainWorkflowService.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/askbrain/ClientController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/askbrain/ClientController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/Config.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/grails-gwurk-0.2/GwurkGrailsPlugin.groovy" afterPath="$PROJECT_DIR$/lib/grails-gwurk-0.2/GwurkGrailsPlugin.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/askbrain/MixedAnswer.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/askbrain/MixedAnswer.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/grails-gwurk-0.2/grails-app/services/edu/msu/mi/gwurk/MturkMonitorService.groovy" afterPath="$PROJECT_DIR$/lib/grails-gwurk-0.2/grails-app/services/edu/msu/mi/gwurk/MturkMonitorService.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/askbrain/Question.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/askbrain/Question.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/askbrain/TurkerController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/askbrain/TurkerController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gwurk-demo.iws" />
@@ -71,7 +73,23 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="false" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="false">
+      <breakpoint url="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" line="19" class="BuildConfig.groovy" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="&#13;&#13;Groovy" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;Groovy" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -84,10 +102,8 @@
       <file leaf-file-name="BootStrap.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="194" column="63" selection-start="7370" selection-end="7370" vertical-scroll-proportion="0.0" vertical-offset="3203" max-vertical-offset="4068">
-              <folding>
-                <element signature="e#0#22#0" expanded="true" />
-              </folding>
+            <state line="30" column="5" selection-start="892" selection-end="892" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="450">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -95,22 +111,30 @@
       <file leaf-file-name="MixedAnswer.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/askbrain/MixedAnswer.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="26" selection-start="288" selection-end="288" vertical-scroll-proportion="2.6666667" vertical-offset="378" max-vertical-offset="720">
+            <state line="13" column="15" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="720">
               <folding />
             </state>
-          </provider>
-          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="AskBrainWorkflowService.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/services/askbrain/AskBrainWorkflowService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="29" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="684">
+            <state line="143" column="0" selection-start="5577" selection-end="5577" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="2034">
               <folding>
-                <element signature="e#18#53#0" expanded="true" />
+                <element signature="n#!!block;n#createAskWorkflow#0;n#!!block;n#AskBrainWorkflowService#0" expanded="false" />
+                <element signature="e#1491#2356#0" expanded="false" />
+                <element signature="n#!!block;n#createTurkerMixerWorkflow#0;n#!!block;n#AskBrainWorkflowService#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BuildConfig.groovy" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="41" selection-start="1293" selection-end="1293" vertical-scroll-proportion="1.5757576" vertical-offset="0" max-vertical-offset="1638">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -118,7 +142,7 @@
       <file leaf-file-name="Workflow.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.2/grails-app/domain/edu/msu/mi/gwurk/Workflow.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="42" selection-start="562" selection-end="562" vertical-scroll-proportion="-2.9629629" vertical-offset="236" max-vertical-offset="954">
+            <state line="22" column="42" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0" vertical-offset="236" max-vertical-offset="954">
               <folding />
             </state>
           </provider>
@@ -130,7 +154,7 @@
       <file leaf-file-name="TaskProperties.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.2/grails-app/domain/edu/msu/mi/gwurk/TaskProperties.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="6" selection-start="32" selection-end="32" vertical-scroll-proportion="2.3333333" vertical-offset="162" max-vertical-offset="1170">
+            <state line="2" column="6" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="1170">
               <folding />
             </state>
           </provider>
@@ -139,10 +163,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Answer.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Answer.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/askbrain/Answer.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="70" selection-start="635" selection-end="635" vertical-scroll-proportion="0.8875" vertical-offset="76" max-vertical-offset="612">
+            <state line="22" column="0" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0" vertical-offset="98" max-vertical-offset="612">
               <folding />
             </state>
           </provider>
@@ -154,7 +178,7 @@
       <file leaf-file-name="Question.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/askbrain/Question.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="171" selection-end="171" vertical-scroll-proportion="-2.1851852" vertical-offset="26" max-vertical-offset="702">
+            <state line="14" column="16" selection-start="328" selection-end="328" vertical-scroll-proportion="0.0" vertical-offset="26" max-vertical-offset="702">
               <folding />
             </state>
           </provider>
@@ -166,16 +190,7 @@
       <file leaf-file-name="TurkerController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/askbrain/TurkerController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="30" selection-start="1409" selection-end="1409" vertical-scroll-proportion="-28.8" vertical-offset="0" max-vertical-offset="2412">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClientController.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/controllers/askbrain/ClientController.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="772" selection-end="772" vertical-scroll-proportion="-18.72" vertical-offset="0" max-vertical-offset="666">
+            <state line="45" column="30" selection-start="1409" selection-end="1409" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="2502">
               <folding />
             </state>
           </provider>
@@ -184,7 +199,7 @@
       <file leaf-file-name="MturkMonitorService.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.2/grails-app/services/edu/msu/mi/gwurk/MturkMonitorService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="0" selection-start="2255" selection-end="2255" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1926">
+            <state line="92" column="0" selection-start="2255" selection-end="2255" vertical-scroll-proportion="0.0" vertical-offset="1656" max-vertical-offset="1980">
               <folding />
             </state>
           </provider>
@@ -230,7 +245,6 @@
         <option value="$PROJECT_DIR$/lib/grails-gwurk-0.1/grails-app/domain/edu/msu/mi/turkmdr/Workflow.groovy" />
         <option value="$PROJECT_DIR$/lib/grails-gwurk-0.1/grails-app/domain/edu/msu/mi/turkmdr/WorkflowRun.groovy" />
         <option value="$PROJECT_DIR$/lib/grails-gwurk-0.1/grails-app/services/edu/msu/mi/turkmdr/MturkTaskService.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
         <option value="$PROJECT_DIR$/lib/grails-gwurk-0.2/grails-app/views/auth/login.gsp" />
         <option value="$PROJECT_DIR$/lib/grails-gwurk-0.2/grails-app/views/credentials/index.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/turker/index.gsp" />
@@ -247,11 +261,12 @@
         <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
         <option value="$PROJECT_DIR$/grails-app/services/askbrain/AskBrainMonitorService.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/askbrain/ClientController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/services/askbrain/AskBrainWorkflowService.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/askbrain/Answer.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/askbrain/MixedAnswer.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/askbrain/MixedAnswer.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/askbrain/Question.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/services/askbrain/AskBrainWorkflowService.groovy" />
       </list>
     </option>
   </component>
@@ -289,7 +304,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -306,6 +320,60 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="askBrain_git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="askBrain_git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="askBrain_git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="unit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="askBrain_git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="askBrain_git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="unit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="askbrain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="askBrain_git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="askBrain_git" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -605,6 +673,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -620,6 +689,10 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="FullScreen" value="false" />
     <property name="SearchEverywhereHistory" value="&#10;index" />
+    <property name="Groovy.Shell.LastModule" value="askBrain_git" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -930,12 +1003,14 @@
       <workItem from="1396683903605" duration="1000" />
       <workItem from="1396720598307" duration="9664000" />
       <workItem from="1396731734355" duration="1122000" />
-      <workItem from="1396732933030" duration="30957000" />
+      <workItem from="1396732933030" duration="31069000" />
+      <workItem from="1396800614336" duration="3511000" />
+      <workItem from="1396805122007" duration="1686000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104518000" />
+    <option name="totallyTimeSpent" value="109827000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -959,41 +1034,41 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-4" width="1368" height="773" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31790122" sideWeight="0.14772727" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.81969696" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29166666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29938272" sideWeight="0.85227275" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29938272" sideWeight="0.85227275" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39969134" sideWeight="0.70075756" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39814815" sideWeight="0.70075756" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29166666" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1022,11 +1097,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/views/turker/_form.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="49" selection-start="96" selection-end="96" vertical-scroll-proportion="-1.3846154" vertical-offset="0" max-vertical-offset="756" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/gturkplugintester/Interests.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="6" selection-start="33" selection-end="33" vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="324" />
@@ -1105,9 +1175,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/turker/index.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="39" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0" vertical-offset="86" max-vertical-offset="432">
-          <folding />
-        </state>
+        <state line="14" column="39" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0" vertical-offset="86" max-vertical-offset="432" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.2/grails-app/views/auth/login.gsp">
@@ -1134,9 +1202,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/client/index.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="115" selection-start="88" selection-end="203" vertical-scroll-proportion="-1.9423077" vertical-offset="25" max-vertical-offset="1188">
-          <folding />
-        </state>
+        <state line="7" column="115" selection-start="88" selection-end="203" vertical-scroll-proportion="-1.9423077" vertical-offset="25" max-vertical-offset="1188" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/unit/askbrain/QuestionSpec.groovy">
@@ -1156,9 +1222,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web-app/css/indexAskBrain.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="1" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
-          <folding />
-        </state>
+        <state line="5" column="1" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.2/grails-app/domain/edu/msu/mi/gwurk/WorkflowRun.groovy">
@@ -1190,16 +1254,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/turker/createAskHit.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="30" selection-start="1743" selection-end="1743" vertical-scroll-proportion="-1.0384616" vertical-offset="648" max-vertical-offset="1530">
-          <folding />
-        </state>
+        <state line="39" column="30" selection-start="1743" selection-end="1743" vertical-scroll-proportion="-1.0384616" vertical-offset="648" max-vertical-offset="1530" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/turker/createMixerHit.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="81" selection-start="0" selection-end="3475" vertical-scroll-proportion="-3.1153846" vertical-offset="864" max-vertical-offset="1692">
-          <folding />
-        </state>
+        <state line="57" column="81" selection-start="0" selection-end="3475" vertical-scroll-proportion="-3.1153846" vertical-offset="864" max-vertical-offset="1692" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/turker/createRankerHit.gsp">
@@ -1211,9 +1271,7 @@
     </entry>
     <entry file="jar:///usr/lib/jvm/java-7-oracle/src.zip!/java/beans/FeatureDescriptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="392" column="36" selection-start="11336" selection-end="11336" vertical-scroll-proportion="1.2299169" vertical-offset="5658" max-vertical-offset="7164">
-          <folding />
-        </state>
+        <state line="392" column="36" selection-start="11336" selection-end="11336" vertical-scroll-proportion="1.2299169" vertical-offset="5658" max-vertical-offset="7164" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.2/src/groovy/edu/msu/mi/gwurk/BeatListener.groovy">
@@ -1225,9 +1283,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/ApplicationResources.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="355">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="355" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.2/application.properties">
@@ -1239,46 +1295,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="563" max-vertical-offset="918">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="563" max-vertical-offset="918" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.2/dependencies.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="846">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="846" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="355">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="355" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.2/GwurkGrailsPlugin.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="38" selection-start="1890" selection-end="1890" vertical-scroll-proportion="0.0" vertical-offset="864" max-vertical-offset="1494">
-          <folding>
-            <element signature="e#0#33#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="52" selection-start="1351" selection-end="1351" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1494">
-          <folding />
-        </state>
+        <state line="56" column="38" selection-start="1890" selection-end="1890" vertical-scroll-proportion="0.0" vertical-offset="864" max-vertical-offset="1494" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="0" selection-start="3714" selection-end="3714" vertical-scroll-proportion="0.0" vertical-offset="1458" max-vertical-offset="2430">
-          <folding />
-        </state>
+        <state line="88" column="0" selection-start="3714" selection-end="3714" vertical-scroll-proportion="0.0" vertical-offset="1458" max-vertical-offset="2430" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/services/askbrain/AskBrainMonitorService.groovy">
@@ -1292,14 +1329,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/askbrain/ClientController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="772" selection-end="772" vertical-scroll-proportion="-18.72" vertical-offset="0" max-vertical-offset="666">
+        <state line="28" column="0" selection-start="772" selection-end="772" vertical-scroll-proportion="0.0" vertical-offset="504" max-vertical-offset="702">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.2/grails-app/domain/edu/msu/mi/gwurk/Workflow.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="42" selection-start="562" selection-end="562" vertical-scroll-proportion="-2.9629629" vertical-offset="236" max-vertical-offset="954">
+        <state line="22" column="42" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0" vertical-offset="236" max-vertical-offset="954">
           <folding />
         </state>
       </provider>
@@ -1309,7 +1346,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.2/grails-app/domain/edu/msu/mi/gwurk/TaskProperties.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="32" selection-end="32" vertical-scroll-proportion="2.3333333" vertical-offset="162" max-vertical-offset="1170">
+        <state line="2" column="6" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="1170">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/askbrain/TurkerController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="30" selection-start="1409" selection-end="1409" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="2502">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/askbrain/Answer.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0" vertical-offset="98" max-vertical-offset="612">
           <folding />
         </state>
       </provider>
@@ -1324,18 +1378,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/askbrain/AskBrainWorkflowService.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/askbrain/Question.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="29" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="684">
-          <folding>
-            <element signature="e#18#53#0" expanded="true" />
-          </folding>
+        <state line="14" column="16" selection-start="328" selection-end="328" vertical-scroll-proportion="0.0" vertical-offset="26" max-vertical-offset="702">
+          <folding />
         </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/askbrain/MixedAnswer.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="26" selection-start="288" selection-end="288" vertical-scroll-proportion="2.6666667" vertical-offset="378" max-vertical-offset="720">
+        <state line="13" column="15" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="720">
           <folding />
         </state>
       </provider>
@@ -1343,40 +1398,34 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
+    <entry file="jar:///usr/lib/jvm/java-7-oracle/src.zip!/java/io/FileInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="194" column="63" selection-start="7370" selection-end="7370" vertical-scroll-proportion="0.0" vertical-offset="3203" max-vertical-offset="4068">
+        <state line="267" column="15" selection-start="9675" selection-end="9675" vertical-scroll-proportion="0.5080906" vertical-offset="4199" max-vertical-offset="7614" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/askbrain/AskBrainWorkflowService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="143" column="0" selection-start="5577" selection-end="5577" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="2034">
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
+            <element signature="n#!!block;n#createAskWorkflow#0;n#!!block;n#AskBrainWorkflowService#0" expanded="false" />
+            <element signature="e#1491#2356#0" expanded="false" />
+            <element signature="n#!!block;n#createTurkerMixerWorkflow#0;n#!!block;n#AskBrainWorkflowService#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/askbrain/TurkerController.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="30" selection-start="1409" selection-end="1409" vertical-scroll-proportion="-28.8" vertical-offset="0" max-vertical-offset="2412">
+        <state line="30" column="5" selection-start="892" selection-end="892" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="450">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/askbrain/Question.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="171" selection-end="171" vertical-scroll-proportion="-2.1851852" vertical-offset="26" max-vertical-offset="702">
+        <state line="26" column="41" selection-start="1293" selection-end="1293" vertical-scroll-proportion="1.5757576" vertical-offset="0" max-vertical-offset="1638">
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/askbrain/Answer.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="70" selection-start="635" selection-end="635" vertical-scroll-proportion="0.8875" vertical-offset="76" max-vertical-offset="612">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
       </provider>
     </entry>
   </component>
@@ -1386,7 +1435,7 @@
         <entry key="askBrain_git">
           <value>
             <GrailsSettings>
-              <option name="buildConfigCrc" value="-1272532045" />
+              <option name="buildConfigCrc" value="1161265659" />
               <option name="pluginDependenciesCrc" value="-1166412878" />
               <option name="properties">
                 <map>
@@ -1418,6 +1467,94 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Hibernate</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>grails-2.3.5</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7 (1)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>askBrain_git</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7 (1)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 

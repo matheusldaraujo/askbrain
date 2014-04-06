@@ -12,7 +12,7 @@ class Question {
     String question
     Boolean answered = false
     Boolean mixed = false
-    Boolean ranked = false
+    Boolean graded = false
     Boolean finalized = false
     MixedAnswer bestMixedAnswer;
 

@@ -11,7 +11,7 @@ class MixedAnswer {
     static hasMany = [rankValue: Integer]
     String mixedAnswer;
     String additionalAnswer;
-    Boolean ranked = false;
+    Boolean graded = false;
 
     static belongsTo = [question:Question];
 

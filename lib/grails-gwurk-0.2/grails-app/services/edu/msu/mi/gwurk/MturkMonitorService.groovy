@@ -90,7 +90,6 @@ class MturkMonitorService {
 
     def beat() {
         log.info "Dropping the beat"
-        print "beat"
         listeners.each {
             if (it instanceof WorkflowRun) {
                 it = WorkflowRun.get(it.id)

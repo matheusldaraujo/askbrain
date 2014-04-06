@@ -86,6 +86,9 @@ grails.hibernate.cache.queries = false
 gwurk.hostname = 'localhost'
 gwurk.port = 8080
 
+
+
+
 environments {
     development {
         grails.logging.jul.usebridge = true

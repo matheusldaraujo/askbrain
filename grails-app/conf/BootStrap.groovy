@@ -1,4 +1,5 @@
 import askbrain.Answer
+import askbrain.AskBrainMonitorService
 import askbrain.MixedAnswer
 import askbrain.Question
 import edu.msu.mi.gwurk.AssignmentView
@@ -21,6 +22,8 @@ class BootStrap {
 
     def mturkTaskService
     def mturkMonitorService
+    def askBrainWorkflowService
+
 
     def init = { servletContext ->
         createAskWorkflow()
@@ -37,7 +40,7 @@ class BootStrap {
                 lifetime: 60 * 60 * 10,
                 assignmentDuration: 60,
                 keywords: "survey, demographics, research",
-                maxAssignments: 1,
+                maxAssignments: askBrainWorkflowService.simpleAnswers,
                 height: 1000,
                 requireApproval: false
         ])
@@ -69,7 +72,7 @@ class BootStrap {
                     def ans = new Answer()
                     ans.saveAnswerFromTurk(turkerAnswer)
 
-                    throwTurkerMixerHits(evt.assignmentView.answer)
+
 
                     break
 
@@ -94,7 +97,7 @@ class BootStrap {
                 lifetime: 60 * 60 * 10,
                 assignmentDuration: 60,
                 keywords: "survey, demographics, research",
-                maxAssignments: 1,
+                maxAssignments: askBrainWorkflowService.mixedAnswers,
                 height: 1000,
                 requireApproval: false
         ])
@@ -125,7 +128,8 @@ class BootStrap {
 
                     def mixed_ans = new MixedAnswer()
                     mixed_ans.saveMixedAnswerFromTurk(turkerAnswer)
-                    throwTurkerRankerHits(turkerAnswer)
+
+
 
                     break
 
@@ -150,7 +154,7 @@ class BootStrap {
                 lifetime: 60 * 60 * 10,
                 assignmentDuration: 60,
                 keywords: "survey, demographics, research",
-                maxAssignments: 1,
+                maxAssignments: askBrainWorkflowService.rankedMixedAnswers,
                 height: 1000,
                 requireApproval: false
         ])
@@ -184,8 +188,14 @@ class BootStrap {
                             if(key.contains("grade_")) {
                                 def mixedAnswerId = key.split("grade_")[1]
                                 def mixed_answer = MixedAnswer.get(mixedAnswerId)
-                                mixed_answer.setRankValue(value.toInteger())
-                                mixed_answer.question.setRanked(true)
+                                mixed_answer.addToRankValue(value.toInteger())
+
+                                if (mixed_answer.rankValue.size() == askBrainWorkflowService.rankedMixedAnswers){
+                                    mixed_answer.question.setRanked(true)
+                                    mixed_answer.setRanked(true)
+                                    mixed_answer.question.chooseBestAnswer()
+                                }
+
                             }
 
                     };
@@ -203,23 +213,7 @@ class BootStrap {
     }
 }
 
-def throwTurkerMixerHits(turkerAnswer){
-    //       Steps to Lunch Hits
-    print "Throwing mixer hits"
-    def w = Workflow.findByName('Turker Mixer Workflow')
-    println("Turker Answer: \"$turkerAnswer.answer\"")
-    println(Workflow.list())
-    mturkMonitorService.launch(w,turkerAnswer.type=="real",turkerAnswer.iterations as int,Credentials.get(turkerAnswer.credentials as long), turkerAnswer.props as Map)
-}
 
-def throwTurkerRankerHits(turkerAnswer){
-    //       Steps to Lunch Hits
-    print "Throwing ranker hits"
-    def w = Workflow.findByName('Turker Ranker Workflow')
-    println("Turker Answer: \"$turkerAnswer.mixedAnswer\"")
-    println(Workflow.list())
-    mturkMonitorService.launch(w,turkerAnswer.type=="real",turkerAnswer.iterations as int,Credentials.get(turkerAnswer.credentials as long), turkerAnswer.props as Map)
-}
 
 def destroy = {
 }

@@ -85,7 +85,7 @@ class AskBrainWorkflowService {
         Task mixer_task = new SingleHitTask("MixerTask", [
                 controller: "turker",
                 action: "createMixerHit",
-                title: "Answer a question and join it with 3 sentences creating a paragraph",
+                title: "Answer a question and join it with ${this.simpleAnswers} sentences creating a paragraph",
                 description: "This a survey you need to simply answer a question in a paragraph.",
         ]).save()
 
@@ -138,7 +138,7 @@ class AskBrainWorkflowService {
         Task ranker_task = new SingleHitTask("RankerTask", [
                 controller: "turker",
                 action: "createRankerHit",
-                title: "Give a grade to 3 answers of one question",
+                title: "Give a grade to ${this.simpleAnswers} answers of one question",
                 description: "This a survey you need to simply answer a question in a paragraph.",
         ]).save()
 

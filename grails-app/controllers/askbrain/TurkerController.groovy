@@ -38,6 +38,14 @@ class TurkerController {
         ["question" : question, "answers": question.getAnswers()]
     }
 
+    def createRankerHit() {
+        print("Turker Controller: createRankerHit")
+        //Get Answer to anserwer
+        def question = Question.findByAnsweredAndMixedAndRanked(true,true,false)
+
+        ["question" : question, "mixedAnswers": question.getMixedAnswers()]
+    }
+
     @Transactional
     def save(Answer answerInstance) {
         print("Turker Controller: save")

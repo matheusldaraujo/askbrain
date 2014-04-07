@@ -14,8 +14,8 @@
 <body>
     <h1>Login</h1>
     <g:form>
-        User Name: <input name="userName" type="text" /><br>
-        Password: <input name="pw" type="password" /><br>
+        User Name: <g:textField name="userName"/><br>
+        Password: <g:passwordField name="pw" type="password" /><br>
         <g:submitButton name="login"/><br>
     </g:form>
     <a href="signup.gsp">Create an account!</a>

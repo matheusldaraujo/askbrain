@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e60fde8-e8b3-4c68-be18-dc824fd11b67" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="8e60fde8-e8b3-4c68-be18-dc824fd11b67" name="Default" comment="" />
     <ignored path="gwurk-demo.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$USER_HOME$/.grails/" />
@@ -91,26 +87,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TurkerController.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/controllers/askbrain/TurkerController.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="600" selection-end="715" vertical-scroll-proportion="3.6" vertical-offset="342" max-vertical-offset="2412">
-              <folding>
-                <marker date="1396802311743" expanded="true" signature="600:715" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.2/grails-app/views/credentials/index.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="108" selection-start="1142" selection-end="1182" vertical-scroll-proportion="-4.173077" vertical-offset="719" max-vertical-offset="1260">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BuildConfig.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
           <provider selected="true" editor-type-id="text-editor">
@@ -138,22 +114,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UrlMappings.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="UrlMappings.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="47" selection-start="231" selection-end="231" vertical-scroll-proportion="0.4331551" vertical-offset="0" max-vertical-offset="374">
+            <state line="9" column="47" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Credentials.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.2/grails-app/domain/edu/msu/mi/gwurk/Credentials.groovy">
-          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-            <state />
-          </provider>
+      <file leaf-file-name="2. gettingStarted.gdoc" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/work/plugins/shiro-1.2.0/src/docs/guide/2. gettingStarted.gdoc">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="11" selection-start="158" selection-end="167" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="342">
+            <state line="170" column="87" selection-start="8137" selection-end="8137" vertical-scroll-proportion="0.0" vertical-offset="2946" max-vertical-offset="4410">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MturkMonitorService.groovy" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.2/grails-app/services/edu/msu/mi/gwurk/MturkMonitorService.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="44" selection-start="460" selection-end="460" vertical-scroll-proportion="0.33333334" vertical-offset="156" max-vertical-offset="1926">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.2/grails-app/views/auth/login.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="56" selection-start="472" selection-end="472" vertical-scroll-proportion="-2.2692308" vertical-offset="170" max-vertical-offset="738">
               <folding />
             </state>
           </provider>
@@ -1093,12 +1084,12 @@
       <workItem from="1396800614336" duration="3511000" />
       <workItem from="1396805122007" duration="11360000" />
       <workItem from="1396880225850" duration="3154000" />
-      <workItem from="1396897674150" duration="2224000" />
+      <workItem from="1396897674150" duration="2572000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124879000" />
+    <option name="totallyTimeSpent" value="125227000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1139,11 +1130,12 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29166666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29938272" sideWeight="0.85227275" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29938272" sideWeight="0.85227275" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3287037" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39814815" sideWeight="0.70075756" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1155,7 +1147,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1185,14 +1176,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/gturkplugintester/Demographics.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="17" selection-start="87" selection-end="171" vertical-scroll-proportion="0.0" vertical-offset="20" max-vertical-offset="378" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/demographics/create.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="20" selection-start="1301" selection-end="1301" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="810" />
@@ -1231,11 +1214,6 @@
     <entry file="file://$PROJECT_DIR$/grails-app/views/turker/index.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="39" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0" vertical-offset="86" max-vertical-offset="432" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.2/grails-app/views/auth/login.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="9" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="738" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.2/grails-app/domain/edu/msu/mi/gwurk/AssignmentView.groovy">
@@ -1368,13 +1346,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.2/grails-app/services/edu/msu/mi/gwurk/MturkMonitorService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="0" selection-start="2255" selection-end="2255" vertical-scroll-proportion="0.0" vertical-offset="1544" max-vertical-offset="1926">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-7-oracle/src.zip!/java/io/FileInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="267" column="15" selection-start="9675" selection-end="9675" vertical-scroll-proportion="0.5080906" vertical-offset="4199" max-vertical-offset="7614" />
@@ -1467,7 +1438,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="0" selection-start="600" selection-end="715" vertical-scroll-proportion="3.6" vertical-offset="342" max-vertical-offset="2412">
           <folding>
-            <marker date="1396802311743" expanded="true" signature="600:715" placeholder="..." />
+            <marker date="1396802311743" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1536,7 +1507,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="47" selection-start="231" selection-end="231" vertical-scroll-proportion="0.4331551" vertical-offset="0" max-vertical-offset="374">
+        <state line="9" column="47" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/work/plugins/shiro-1.2.0/src/docs/guide/2. gettingStarted.gdoc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="170" column="87" selection-start="8137" selection-end="8137" vertical-scroll-proportion="0.0" vertical-offset="2946" max-vertical-offset="4410">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.2/grails-app/views/auth/login.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="56" selection-start="472" selection-end="472" vertical-scroll-proportion="-2.2692308" vertical-offset="170" max-vertical-offset="738">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.2/grails-app/services/edu/msu/mi/gwurk/MturkMonitorService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="44" selection-start="460" selection-end="460" vertical-scroll-proportion="0.33333334" vertical-offset="156" max-vertical-offset="1926">
           <folding />
         </state>
       </provider>

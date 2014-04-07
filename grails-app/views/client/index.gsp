@@ -16,10 +16,10 @@
 <h1>Hi Client</h1>
 <div>
     <div>
-        <a href="#">Log in</a>
+        <a href="login.gsp">Log in</a>
     </div>
     <div>
-        <a href="#"> Sign up </a>
+        <a href="signup.gsp"> Sign up </a>
     </div>
 
 </div>

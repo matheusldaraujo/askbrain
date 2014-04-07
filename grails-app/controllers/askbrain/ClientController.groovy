@@ -30,5 +30,9 @@ class ClientController {
         redirect(action: "loading")
     }
 
+    def signup(){}
+
+    def login(){}
+
     def loading() {}
 }

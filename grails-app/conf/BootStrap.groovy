@@ -25,6 +25,8 @@ class BootStrap {
 
 
     def init = { servletContext ->
+        //Auto login as matheus
+        new Credentials(["name":"matheus","awsId":"AKIAIBUJ2GWH7GCFPF4A","awsSecret":"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"]).save()
         askBrainWorkflowService.createAskWorkflow()
         askBrainWorkflowService.createTurkerMixerWorkflow()
         askBrainWorkflowService.createTurkerRankerWorkflow()

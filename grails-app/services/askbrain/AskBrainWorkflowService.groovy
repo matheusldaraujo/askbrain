@@ -180,9 +180,9 @@ class AskBrainWorkflowService {
                 if(key.contains("grade_")) {
                     def mixedAnswerId = key.split("grade_")[1]
                     def mixed_answer = MixedAnswer.get(mixedAnswerId)
-                    mixed_answer.addToRankValue(value.toInteger())
+                    mixed_answer.addToGradeValue(value.toInteger())
 
-                    if (mixed_answer.rankValue.size() == this.gradedMixedAnswers){
+                    if (mixed_answer.gradeValue.size() == this.gradedMixedAnswers){
                         mixed_answer.question.setGraded(true)
                         mixed_answer.setGraded(true)
                         mixed_answer.question.chooseBestAnswer()

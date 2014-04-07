@@ -11,12 +11,6 @@
 </head>
 <body>
 <a href="#create-question" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
-<div class="nav" role="navigation">
-    <ul>
-        <li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
-        <li><g:link class="list" action="index"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
-    </ul>
-</div>
 <div id="create-question" class="content scaffold-create" role="main">
     <h1><g:message code="default.create.label" args="[entityName]" /></h1>
     <g:if test="${flash.message}">
@@ -31,19 +25,25 @@
     </g:hasErrors>
 
 %{--ASK BRAIN--}%
-    <div id="container">
-        <h4>Please answer this question:</h4>
+    <div id="container" class="center">
+        <h1>Please just give a grade to each answer for this question:</h1>
         <br/>
         <h2 class="question">${question.getQuestion()}</h2>
 
 
         <g:form action="save">
 
-            <h4>Please mix your answer with these sentences:</h4>
+
 
             <g:each var="mixedAnswer" in="${mixedAnswers}">
-                <h2>${mixedAnswer.getMixedAnswer()}</h2>
-                <g:textField name="grade_${mixedAnswer.getId()}"></g:textField>
+                <div class="gradeAnswerDiv" >Answer: <span class="gradeAnswerText">${mixedAnswer.getMixedAnswer()}</span></div>
+               <div class="ratioInputs">
+                <div><g:radio name="grade_${mixedAnswer.getId()}" value="5" /> Excelente</div>
+                <div><g:radio name="grade_${mixedAnswer.getId()}" value="4" /> Acceptable</div>
+                <div><g:radio name="grade_${mixedAnswer.getId()}" value="3" /> Medium</div>
+                <div><g:radio name="grade_${mixedAnswer.getId()}" value="2" /> Poor</div>
+                <div><g:radio name="grade_${mixedAnswer.getId()}" value="1" /> Trash</div>
+               </div>
             </g:each>
 
 

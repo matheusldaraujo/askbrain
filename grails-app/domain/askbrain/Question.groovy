@@ -20,7 +20,7 @@ class Question {
         def toChooseAnswer = null
         def maxAvg = 0
         mixedAnswers.each { mixedAnswer ->
-            def average = mixedAnswer.rankValue.sum()/mixedAnswer.rankValue.size()
+            def average = mixedAnswer.gradeValue.sum()/mixedAnswer.gradeValue.size()
             if( average > maxAvg){
                 maxAvg = average
                 toChooseAnswer = mixedAnswer

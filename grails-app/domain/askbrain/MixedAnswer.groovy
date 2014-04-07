@@ -8,7 +8,7 @@ class MixedAnswer {
 //        TODO: Increase Answer space, not just varchar(255)
     }
 
-    static hasMany = [rankValue: Integer]
+    static hasMany = [gradeValue: Integer]
     String mixedAnswer;
     String additionalAnswer;
     Boolean graded = false;

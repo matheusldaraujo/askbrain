@@ -25,6 +25,7 @@
 </div>
 <div>
     <g:form action="begin_question">
+        <h2>Make you Question:</h2>
         <div>
             <g:textField id="questionField" name="question"/>
         </div>

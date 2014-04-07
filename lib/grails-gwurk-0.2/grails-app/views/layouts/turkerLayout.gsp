@@ -14,13 +14,13 @@
     <link rel="apple-touch-icon" sizes="114x114" href="${resource(dir: 'images', file: 'apple-touch-icon-retina.png')}">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'main.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'mobile.css')}" type="text/css">
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'indexAskBrain.css')}" type="text/css">
     <g:layoutHead/>
     <g:javascript library="application"/>
     <r:layoutResources />
 </head>
 <body>
-<div id="grailsLogo" role="banner"><a href="http://grails.org"><img src="${resource(dir: 'images', file: 'grails_logo.png')}" alt="Grails"/></a></div>
-Here I am!!!!
+<div id="grailsLogo" role="banner"><img id="brain_top_img" src="${resource(dir: 'images', file: 'brain.png')}" alt="Grails"/> <span class="titleAskBrain"> Ask Brain </span></div>
 <g:layoutBody/>
 <div class="footer" role="contentinfo"></div>
 <div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>

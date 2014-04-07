@@ -2,8 +2,45 @@
     width: 50%;
 }
 #workflow_data{
-    /*display:none;*/
+    display:none;
 }
 .question{
     text-align: center;
+}
+
+#brain_top_img{
+    max-height: 100px;
+}
+
+.titleAskBrain{
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+}
+
+.center{
+    text-align:center;
+    margin-top: 5px;
+}
+li{
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 200px;
+    font-size: 22px;
+    olor: rgb(14, 68, 14);
+    font-weight: bold;
+}
+.gradeAnswerText{
+
+    text-decoration: underline;
+}
+.gradeAnswerDiv{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.ratioInputs{
+    text-align: left;
+    margin-left:40%;
 }

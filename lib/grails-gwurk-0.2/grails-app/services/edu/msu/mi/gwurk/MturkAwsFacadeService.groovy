@@ -23,7 +23,7 @@ class MturkAwsFacadeService {
         hitView.expire(requesterService)
         hitView.taskRun.activeHit = null
         hitView.taskRun.save()
-    }
+    } 
 
     def refresh(RequesterService requesterService, TaskRun taskRun) {
         taskRun.activeHit.update(requesterService)

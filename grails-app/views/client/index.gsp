@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>Ask Brain</title>
-    <link rel="stylesheet" href="${resource(dir: 'css', file: 'indexAskBrain.css')}" type="text/css">
+    <meta name="layout" content="client_main">
 </head>
 
 <body>
@@ -23,13 +23,13 @@
     </div>
 
 </div>
-<div>
+<div >
     <g:form action="begin_question">
         <h2>Make you Question:</h2>
-        <div>
-            <g:textField id="questionField" name="question"/>
+        <div class="input-group">
+            <g:textField class="input-group" id="questionField" name="question"/>
         </div>
-    <input type="button" onclick="document.getElementById('Launch').click()" value="Ask me" />
+    <input type="button" class="btn btn-default" onclick="document.getElementById('Launch').click()" value="Ask me" />
 
 
 <div id="workflow_data" >

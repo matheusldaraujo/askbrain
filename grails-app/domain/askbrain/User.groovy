@@ -1,18 +1,21 @@
 package askbrain
 
 class User {
-    String firstName;
-    String lastName;
-    String middleInitial;
-    String userName;
-    String pw; // Password
-    String userEmail;
+    String firstName
+    String lastName
+    String middleInitial
+    String userName
+    String pw // Password
+    String userEmail
+
+    static hasMany = [question:Question]
 
     static constraints = {
-        //firstName  Nullable : false
-        //lastName Nullable : false
-        //middleInitial Nullable : true
-        //userName nullable : false
-        //email Nullable : false
+        firstName blank:false
+        lastName blank:false
+        middleInitial size: 0..1, blank:true
+        userName blank:false
+        userEmail blank:false, matches: /.+\@.+\..+/
+        pw blank:false
     }
 }

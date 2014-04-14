@@ -8,13 +8,13 @@ class Question {
     }
 
     static hasMany = [answers:Answer, mixedAnswers:MixedAnswer]
-
+    static belongsTo = [user:User]
     String question
     Boolean answered = false
     Boolean mixed = false
     Boolean graded = false
     Boolean finalized = false
-    MixedAnswer bestMixedAnswer;
+    MixedAnswer bestMixedAnswer
 
     public def chooseBestAnswer(){
         def toChooseAnswer = null

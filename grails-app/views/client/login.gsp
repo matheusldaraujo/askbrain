@@ -13,7 +13,7 @@
 
 <body>
     <h1>Login</h1>
-    <g:form>
+    <g:form action="validateCredentials">
         User Name: <g:textField name="userName"/><br>
         Password: <g:passwordField name="pw" type="password" /><br>
         <g:submitButton name="login"/><br>

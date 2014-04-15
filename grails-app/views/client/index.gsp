@@ -14,17 +14,26 @@
 
 <body>
 <h1>Hi Client</h1>
-<div>
+<g:form action="begin_question">
     <div>
-        <a href="/login.gsp">Log in</a>
-    </div>
-    <div>
-        <a href="/signup.gsp"> Sign up </a>
-    </div>
+        <g:hiddenField name="id" value="${params.id}"/>
+        <g:if test="${params.isLoggedIn == '0'}">
+            <div>
+                <g:link name="loginFrm" action="login">Login</g:link>
+            </div>
+            <div>
+                <g:link name="signupFrm" action="signup">Create An Account!</g:link>
+            </div>
+        </g:if>
+        <g:else>
+            <div>
+                <g:link name="userProfileFrm" action="userProfile">Profile</g:link>
+                <g:link name="logout" action="logoutUser" params="${params}">Logout</g:link>
+            </div>
+        </g:else>
 
-</div>
-<div >
-    <g:form action="begin_question">
+    </div>
+    <div >
         <h2>Make you Question:</h2>
         <div class="input-group">
             <g:textField class="input-group" id="questionField" name="question"/>

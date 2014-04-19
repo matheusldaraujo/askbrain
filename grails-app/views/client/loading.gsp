@@ -8,10 +8,15 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
-    <title></title>
+    <title>Ask Brain - Loading</title>
 </head>
 
 <body>
-We are thinking about your question...
+    <g:form>
+        <div>
+            <div>
+            </div>
+        </div>
+    </g:form>
 </body>
 </html>

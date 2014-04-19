@@ -16,7 +16,7 @@
 <h1>Hi Client</h1>
 <g:form action="begin_question">
     <div>
-        <g:hiddenField name="id" value="${params.id}"/>
+        <g:hiddenField name="isLoggedIn" value="${params.isLoggedIn}"/>
         <g:if test="${params.isLoggedIn == '0'}">
             <div>
                 <g:link name="loginFrm" action="login">Login</g:link>
@@ -26,8 +26,9 @@
             </div>
         </g:if>
         <g:else>
+            <g:hiddenField name="id" value="${params.id}"/>
             <div>
-                <g:link name="userProfileFrm" action="userProfile">Profile</g:link>
+                <g:link name="userProfileFrm" id="${params.id}" action="userProfile">Profile</g:link>
                 <g:link name="logout" action="logoutUser" params="${params}">Logout</g:link>
             </div>
         </g:else>
@@ -64,7 +65,7 @@
         <g:submitButton name="Launch" value="Ask me"/>
         <g:actionSubmit action="index" value="Cancel"/>
     </g:form>
-</div>
+<</div>
 
 </div>
 </body>

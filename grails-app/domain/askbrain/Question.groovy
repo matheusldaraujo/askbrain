@@ -5,6 +5,7 @@ class Question {
     static constraints = {
 //        TODO: Increase Question space, not just varchar(255)
         bestMixedAnswer nullable: true
+        user nullable: true
     }
 
     static hasMany = [answers:Answer, mixedAnswers:MixedAnswer]

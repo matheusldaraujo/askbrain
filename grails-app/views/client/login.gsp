@@ -16,7 +16,7 @@
     <g:form action="validateCredentials">
         User Name: <g:textField name="userName"/><br>
         Password: <g:passwordField name="pw" type="password" /><br>
-        <g:submitButton name="login"/><br>
+        <g:submitButton name="login" id="${params.id}"/><br>
     </g:form>
     <a href="signup.gsp">Create an account!</a>
 </body>

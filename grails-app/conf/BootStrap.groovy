@@ -13,6 +13,7 @@ import edu.msu.mi.gwurk.TaskRun
 import edu.msu.mi.gwurk.Workflow
 import edu.msu.mi.gwurk.WorkflowRun
 import groovy.util.logging.Log4j
+import askbrain.User
 import gturkplugintester.Demographics
 import gturkplugintester.Interests
 
@@ -30,6 +31,9 @@ class BootStrap {
         askBrainWorkflowService.createAskWorkflow()
         askBrainWorkflowService.createTurkerMixerWorkflow()
         askBrainWorkflowService.createTurkerRankerWorkflow()
+
+        //Create Test user
+        new User(["firstName":"fn","lastName":"ln","middleInitial":"mi","userName":"un","pw":"pw","conPw":"pw","userEmail":"a@a.com"]).save()
     }
 
 def destroy = {

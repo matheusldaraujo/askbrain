@@ -13,17 +13,17 @@ class User {
     static hasMany = [question:Question]
 
     static constraints = {
-        firstName blank:true
-        lastName blank:false, nullable: true
-        middleInitial size: 0..1, blank:true, nullable: true
-        userName blank:false, unique: true
-        userEmail blank:false, matches: /.+\@.+\..+/
-        pw blank:false
-        isLoggedIn blank:false
-        conPw validator: { val, obj ->
-            if (obj.pw != obj.conPw){
-                return "Passwords do not match."
-            }
-        }
+//        firstName blank:true
+//        lastName blank:false, nullable: true
+//        middleInitial size: 0..1, blank:true, nullable: true
+//        userName blank:false, unique: true
+//        userEmail blank:false, matches: /.+\@.+\..+/
+//        pw blank:false
+//        isLoggedIn blank:false
+//        conPw validator: { val, obj ->
+//            if (obj.pw != obj.conPw){
+//                return "Passwords do not match."
+//            }
+//        }
     }
 }

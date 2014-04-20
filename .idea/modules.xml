@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/askbrain.iml" filepath="$PROJECT_DIR$/askbrain.iml" />
-      <module fileurl="file://$PROJECT_DIR$/askbrain-grailsPlugins.iml" filepath="$PROJECT_DIR$/askbrain-grailsPlugins.iml" />
       <module fileurl="file://$PROJECT_DIR$/gwurk-inplacePlugin.iml" filepath="$PROJECT_DIR$/gwurk-inplacePlugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/joe.iml" filepath="$PROJECT_DIR$/joe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/joe-grailsPlugins.iml" filepath="$PROJECT_DIR$/joe-grailsPlugins.iml" />
     </modules>
   </component>
 </project>

@@ -9,15 +9,27 @@
 <html>
 <head>
     <title>Ask Brain - Login</title>
+    <meta name="layout" content="client_main">
 </head>
 
 <body>
-    <h1>Login</h1>
-    <g:form action="validateCredentials">
-        User Name: <g:textField name="userName"/><br>
-        Password: <g:passwordField name="pw" type="password" /><br>
-        <g:submitButton name="login" id="${params.id}"/><br>
+<g:form action="validateCredentials">
+
+    <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>User Name: </h2><g:textField style="text-align: center;" placeholder="User name" class=" form-control input-normal "  name="userName"/><br>
+                </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h2>Password: </h2> <g:passwordField style="text-align: center;" placeholder="User name" class=" form-control input-normal " name="pw" type="password" />
+        </div>
+    </div>
+    <div class="row">
+            <div class="col-md-12 text-center">
+            <g:submitButton class="btn btn-default" name="login" id="${params.id}" value="Login"/><br>
+            </div>
+     </div>
     </g:form>
-    <a href="signup.gsp">Create an account!</a>
 </body>
 </html>

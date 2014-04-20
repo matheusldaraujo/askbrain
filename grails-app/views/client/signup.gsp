@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>Ask Brain - Sign Up</title>
+    <meta name="layout" content="client_main">
 </head>
 
 <body>
@@ -29,27 +30,27 @@
             <tr>
                 <td><strong>*</strong></td>
                 <td>Name:</td>
-                <td><g:textField  name="firstName" type="text" value="${fieldValue(bean: user, field: 'firstName')}"/></td>
+                <td><g:textField  name="firstName" type="text" value=""/></td>
             </tr>
             <tr>
                 <td></td>
                 <td>Initial:</td>
-                <td><g:textField name="middleInitial" type="text" maxlength="1" value="${fieldValue(bean: user, field: 'middleInitial')}"/></td>
+                <td><g:textField name="middleInitial" type="text" maxlength="1" value=""/></td>
             </tr>
             <tr>
                 <td></td>
                 <td>Last Name:</td>
-                <td><g:textField name="lastName" type="text" value="${fieldValue(bean: user, field: 'lastName')}"/></td>
+                <td><g:textField name="lastName" type="text" value=""/></td>
             </tr>
             <tr>
                 <td><strong>*</strong></td>
                 <td>Email:</td>
-                <td><g:textField  name="userEmail" type="text" value="${fieldValue(bean: user, field: 'userEmail')}" /></td>
+                <td><g:textField  name="userEmail" type="text" value="" /></td>
             </tr>
             <tr>
                 <td><strong>*</strong></td>
                 <td>User Name:</td>
-                <td><g:textField name="userName" type="text" value="${fieldValue(bean: user, field: 'userName')}"/></td>
+                <td><g:textField name="userName" type="text" value=""/></td>
             </tr>
             <tr>
                 <td><strong>*</strong></td>

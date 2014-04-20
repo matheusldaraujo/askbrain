@@ -9,12 +9,12 @@ class ClientController {
     def mturkMonitorService
 
     def index() {
-        if(params.isLoggedIn == null){
-            redirect(action:"index", params:['isLoggedIn':0])
-        }
-        if (params.isLoggedIn == 1){
-            def user = User.load(params.id)
+        def user = session.getAttribute("user")
+        if(user){
             [user:user]
+        }
+        else{
+            [user:null]
         }
     }
 
@@ -25,7 +25,7 @@ class ClientController {
         q.setQuestion(params.question)
         if (params.isLoggedIn){
             println "Here"
-            def user = User.load(params.id)
+            def user = User.get(1)
             q.setUser(user)
             user.question.add(q)
             user.save()
@@ -51,57 +51,66 @@ class ClientController {
     def loading() {}
 
     def validateCredentials(){
-       User.load()
-       println (params.pw == "")
-       println (params.userName == "")
-
-       if ((params.pw).toString() == "" || (params.userName).toString() == ""){
-           render(view:"login")
-       } else {
-
-           def user1Pw = User.executeQuery("SELECT u.pw FROM User u WHERE u.userName = '${params.userName}'")
-
-           if (user1Pw == []) {
-               render(view:"login")
-           } else if (user1Pw[0] == params.pw){
-               def user1Id = User.executeQuery("SELECT u.id FROM User u WHERE u.userName = '${params.userName}'")
-
-               def user = User.load(user1Id[0])
-               user.isLoggedIn = 1
-               user.save()
-               redirect(action:"index", params:['id':user1Id[0], 'isLoggedIn': 1])
-           } else {
-               render(view:"login")
-           }
+       def user = User.findByUserNameAndPw(params.userName, params.pw)
+       if(user){
+           session.user = user
+           redirect(action:"index")
        }
+       else{
+           render(view:"login")
+       }
+//       if ((params.pw).toString() == "" || (params.userName).toString() == ""){
+//           render(view:"login")
+//       } else {
+//
+//           def user1Pw = User.executeQuery("SELECT u.pw FROM User u WHERE u.userName = '${params.userName}'")
+//
+//           if (user1Pw == []) {
+//               render(view:"login")
+//           } else if (user1Pw[0] == params.pw){
+//               def user1Id = User.executeQuery("SELECT u.id FROM User u WHERE u.userName = '${params.userName}'")
+//
+//               def user = User.load(user1Id[0])
+//               user.isLoggedIn = 1
+//               user.save()
+//               redirect(action:"index", params:['id':user1Id[0], 'isLoggedIn': 1])
+//           } else {
+//               render(view:"login")
+//           }
+//       }
     }
 
     def createUser(){
-        def user = new User(params)
-        params.userName = (params.userName.toString()).trim()
-        params.firstName = (params.firstName.toString()).trim()
-        params.middleInitial = (params.middleInitial.toString()).trim()
-        params.lastName = (params.lastName.toString()).trim()
-        params.userEmail = (params.userEmail.toString()).trim()
+        def user = new User()
+        user.setFirstName("a")
+        user.setLastName("a")
+        user.setMiddleInitial("a")
+        user.setUserName("a")
+        user.setPw ("a")
+        user.setConPw("a")
+        user.setUserEmail("casa@casa.com")
+
 
         if(user.save()){
+            print "teste"
             redirect(action:"login")
         } else {
+            print "testeteste"
             render(view:"signup")
         }
     }
 
     def userProfile(){
-        println "Params: " + params
-        def user = User.load(params.id)
-        [user:user]
+        //Make the redundancy, so the IDE nows that session.user is a User
+        def user = User.get(session.user.getId())
+
+        [user:user,question:user.getQuestion()]
     }
 
     def logoutUser(){
-        def user = User.load(params.id)
-        user.isLoggedIn = 0
-        user.save()
-        redirect (action:"index", params:['isLoggedIn',0])
+        //TODO: make session.invalidate() works
+        session.user = null
+        redirect (action:"index")
     }
 
     def checkIfAnswered(){

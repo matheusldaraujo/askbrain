@@ -20,8 +20,10 @@
     <link rel="shortcut icon" href="${resource(dir: 'images', file: 'favicon.png')}" type="image/x-icon">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'indexAskBrain.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap.min.css')}" type="text/css">
-    <link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap-theme.min.css')}" type="text/css">
+
     <g:javascript src="jquery-1.11.0.min.js" />
+    <g:javascript src="jquery-ui-1.10.4.min.js" />
+    <g:javascript src="askbrain.js" />
     <g:javascript src="bootstrap.min.js" />
 
     <g:layoutHead/>
@@ -30,6 +32,50 @@
     <r:layoutResources />
 </head>
 <body>
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <g:link class="navbar-brand" action="index">The Ask Brain Project</g:link>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                    <g:link name="index" action="index">Make your question</g:link>
+                </li>
+                <g:if test="${!user}">
+                <li>
+                    <g:link name="loginFrm" action="login">Login</g:link>
+                </li>
+                <li>
+                    <g:link name="signupFrm" action="signup">Create An Account</g:link>
+                </li>
+                </g:if>
+                <g:else>
+                    <li>
+                        <g:link name="logout" action="logoutUser">Logout</g:link>
+                    </li>
+                    <li >
+                        <g:link name="userProfileFrm" action="userProfile">Profile: See your question</g:link>
+                    </li>
+                </g:else>
+
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
 <div class="container">
 <g:layoutBody/>
 

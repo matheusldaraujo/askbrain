@@ -59,6 +59,9 @@ class ClientController {
        else{
            render(view:"login")
        }
+
+
+// Joes' code
 //       if ((params.pw).toString() == "" || (params.userName).toString() == ""){
 //           render(view:"login")
 //       } else {
@@ -81,21 +84,12 @@ class ClientController {
     }
 
     def createUser(){
-        def user = new User()
-        user.setFirstName("a")
-        user.setLastName("a")
-        user.setMiddleInitial("a")
-        user.setUserName("a")
-        user.setPw ("a")
-        user.setConPw("a")
-        user.setUserEmail("casa@casa.com")
+        def user = new User(params)
 
 
         if(user.save()){
-            print "teste"
             redirect(action:"login")
         } else {
-            print "testeteste"
             render(view:"signup")
         }
     }

@@ -33,7 +33,9 @@ class BootStrap {
         askBrainWorkflowService.createTurkerRankerWorkflow()
 
         //Create Test user
-        new User(["firstName":"fn","lastName":"ln","middleInitial":"mi","userName":"un","pw":"pw","conPw":"pw","userEmail":"a@a.com"]).save()
+        def user = new User(firstName:"fn",lastName:"ln",userName:"un",pw:"pw")
+        user.save()
+
     }
 
 def destroy = {

@@ -21,7 +21,7 @@
 </g:if>
 <g:else>
     <div class="col-md-12 text-center bg-info">
-        <h3 class=" text-info">Welcome ${user.getFirstName()}</h3>
+        <h4 class=" text-info">You are logged as ${user.getFirstName()} ${user.getLastName()}</h4>
     </div>
 </g:else>
 <div class="row">
@@ -71,7 +71,8 @@
         <img src="${resource(dir: 'images', file: 'brain.png')}">
     </div>
 </div>
-<div class="row">
+
+<div style="padding-top: 50px" class="row">
     <div class="col-md-12">
 
             <div class="col-md-6">

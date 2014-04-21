@@ -25,32 +25,40 @@
     </g:hasErrors>
 
 %{--ASK BRAIN--}%
-    <div id="container" class="center">
-        <h1>Please answer this question:</h1>
+    <div class="col-md-12 jumbotron">
+    <div id="container" class="text-center">
+        <h3>Please answer this question:</h3>
         <br/>
-        <h2 class="question">${question.getQuestion()}</h2>
+        <h5>You can search anywhere, even from your mind</h5>
+        <div class="btn-toolbar">
+        <h2 class="h3">${question.getQuestion()}</h2>
 
         <g:form action="save">
              <br/><br/>
-            <label>Your answer: </label><g:textField name="additionalAnswer" />
+            <label>Your answer: </label><g:textField class="form-control input-lg" placeholder="Be honest"  name="additionalAnswer" />
 
-            <br/><br/><br/><br/>
+            <br/><br/>
 
-            <h1>Please mix your answer with these sentences:</h1>
+            <h2>Please mix your answer with these sentences in blue:</h2>
 
-            <ul>
+            <div class="row">
+
                 <g:each var="answer" in="${answers}">
-                    <li>${answer.getAnswer()}</li>
+                    <div class="row bg-info">
+                        <h3>${answer.getAnswer()}</h3>
+                    </div>
                 </g:each>
-            </ul>
 
+            </div>
 
-            <g:textArea name="mixedAnswer"></g:textArea>
+            <g:textArea class="input-lg col-lg-12" rows="6" name="mixedAnswer"></g:textArea>
 
+            <div class="row">
             <g:hiddenField name="question_id" value="${question.getId()}" />
-            <div>
-                <br/>
-            <g:submitButton name="Submit" />
+            </div>
+            <div class="row">
+                <br/><br/>
+            <g:submitButton  class="btn btn-primary btn-lg"  name="Submit" />
             </div>
 
 
@@ -82,6 +90,7 @@
 
         </g:form>
     </div>
+       </div>
 
 
 </div>

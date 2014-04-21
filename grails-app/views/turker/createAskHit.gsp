@@ -4,12 +4,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="layout" content="main">
     <g:set var="entityName" value="${message(code: 'question.label', default: 'FirstQuestion')}" />
     <title><g:message code="default.create.label" args="[entityName]" /></title>
-    <link rel="stylesheet" href="${resource(dir: 'css', file: 'indexAskBrain.css')}" type="text/css">
 </head>
 <body>
+casa
 <a href="#create-question" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
 <div id="create-question" class="content scaffold-create" role="main">
     <h1><g:message code="default.create.label" args="[entityName]" /></h1>

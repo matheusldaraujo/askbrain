@@ -14,14 +14,15 @@
 
 <body>
 
-<g:if test="${!user}">
+<g:if test="${params.justRegistered == "1"}">
     <div style="padding: 10px" class="panel-danger col-md-12 text-center bg-success">
         <span class="glyphicon glyphicon-ok"></span> <span class="h4 text-success"> You are now registered, please log in</span>
     </div>
+    <br/><br/><br/><br/>
 </g:if>
 
 <div class="col-md-5 col-md-offset-1">
-    <img src="${resource(dir: 'images', file: 'pink.gif')}">
+    <img src="${resource(dir: 'images', file: 'pinkyAndTheBrain.gif')}">
 </div>
 
 <div class="col-md-6">

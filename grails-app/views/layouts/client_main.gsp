@@ -61,11 +61,11 @@
                 </li>
                 </g:if>
                 <g:else>
-                    <li>
-                        <g:link name="logout" action="logoutUser">Logout</g:link>
-                    </li>
                     <li >
                         <g:link name="userProfileFrm" action="userProfile">Profile: See your question</g:link>
+                    </li>
+                    <li>
+                        <g:link name="logout" action="logoutUser">Logout</g:link>
                     </li>
                 </g:else>
 

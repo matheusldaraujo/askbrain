@@ -20,19 +20,23 @@ class ClientController {
 
     @Transactional
     def begin_question() {
+        def user = User.get(session.user.getId())
+
 //        Save question
         def q = new Question()
         q.setQuestion(params.question)
-        if (params.isLoggedIn){
-            println "Here"
-            def user = User.get(1)
+
+        if (session.user){
             q.setUser(user)
-            user.question.add(q)
-            user.save()
+            user.addToQuestion(q)
+            if(!user.save()){
+                print "Askbrain: user NOT saved"
+            }
+
         }
         if (!q.save()) {
             q.errors.each {
-                println it
+                print "Askbrain: question NOT saved"
             }
         }
 
@@ -41,14 +45,16 @@ class ClientController {
         println("Client question: \"$params.question\"")
         println(Workflow.list())
         mturkMonitorService.launch(w,params.type=="real",params.iterations as int,Credentials.get(params.credentials as long), params.props as Map)
-        redirect(action: "loading", params: ['isLoggedIn':params.isLoggedIn, 'id':params.id])
+        redirect(action: "userProfile")
     }
 
     def signup() {}
 
     def login() {}
 
-    def loading() {}
+    def loading() {
+        [user:session.user]
+    }
 
     def validateCredentials(){
        def user = User.findByUserNameAndPw(params.userName, params.pw)
@@ -88,7 +94,7 @@ class ClientController {
 
 
         if(user.save()){
-            redirect(action:"login")
+            redirect(action:"login", params:['justRegistered': 1])
         } else {
             render(view:"signup")
         }

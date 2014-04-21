@@ -14,20 +14,20 @@
 
 <body>
 
-<g:if test="${!user}">
-    <div class="col-md-12 text-center bg-danger">
-        <h3 class=" text-danger">Please signup for full support</h3>
-    </div>
-</g:if>
-<g:else>
+%{--<g:if test="${!user}">--}%
+    %{--<div class="col-md-12 text-center bg-danger">--}%
+        %{--<h3 class=" text-danger">Please signup for full support</h3>--}%
+    %{--</div>--}%
+%{--</g:if>--}%
+
+<g:if test="${user}">
     <div class="col-md-12 text-center bg-info">
         <h4 class=" text-info">You are logged as ${user.getFirstName()} ${user.getLastName()}</h4>
     </div>
-</g:else>
+</g:if>
+
 <div class="row">
-    <div class="col-md-12 text-center"></div>
-</div>
-<div class="row">
+<g:if test="${user}">
     <div style="padding-top: 5%;" class="col-md-6 text-center">
         <h2>Make your question:</h2>
 
@@ -66,7 +66,12 @@
 
         </g:form>
     </div>
-
+    </g:if>
+    <g:else>
+        <div style="padding-top: 10%;" class="col-md-6">
+            <g:link name="register" action="signup" class="btn btn-success btn-block btn-lg"><br/><br/><br/> <span class="h1">Sign up</span><br/><br/><br/></g:link>
+        </div>
+    </g:else>
     <div class="col-md-6 text-center">
         <img src="${resource(dir: 'images', file: 'brain.png')}">
     </div>

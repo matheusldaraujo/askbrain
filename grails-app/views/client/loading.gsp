@@ -9,12 +9,14 @@
 <html>
 <head>
     <title>Ask Brain - Loading</title>
+    <meta name="layout" content="client_main">
 </head>
 
 <body>
     <g:form>
         <div>
             <div>
+                <h1>Loading</h1>
             </div>
         </div>
     </g:form>

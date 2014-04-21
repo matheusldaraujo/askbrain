@@ -10,12 +10,19 @@ class Question {
 
     static hasMany = [answers:Answer, mixedAnswers:MixedAnswer]
     static belongsTo = [user:User]
+
+    static mapping = {
+        sort "id"
+    }
+
     String question
     Boolean answered = false
     Boolean mixed = false
     Boolean graded = false
     Boolean finalized = false
     MixedAnswer bestMixedAnswer
+
+
 
     public def chooseBestAnswer(){
         def toChooseAnswer = null

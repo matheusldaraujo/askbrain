@@ -27,13 +27,13 @@ class BootStrap {
 
     def init = { servletContext ->
         //Auto login as matheus
-        new Credentials(["name":"joe","awsId":"AKIAJTWL3OQ3G3V4ILFQ","awsSecret":"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"]).save()
+        new Credentials(["name":"matheus","awsId":"AKIAIBUJ2GWH7GCFPF4A","awsSecret":"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"]).save()
         askBrainWorkflowService.createAskWorkflow()
         askBrainWorkflowService.createTurkerMixerWorkflow()
         askBrainWorkflowService.createTurkerRankerWorkflow()
 
         //Create Test user
-        def user = new User(firstName:"fn",lastName:"ln",userName:"un",pw:"pw")
+        def user = new User(firstName:"John",lastName:"Snow",userName:"john_snow",pw:"12345")
         user.save()
 
     }

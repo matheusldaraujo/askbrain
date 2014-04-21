@@ -4,11 +4,15 @@
     <list default="true" id="573f3a20-ae39-4374-8139-aa6d52b3b8a0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/askbrain/ClientController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/askbrain/ClientController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/askbrain/User.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/askbrain/User.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/js/askbrain.js" afterPath="$PROJECT_DIR$/web-app/js/askbrain.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/askbrain/Question.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/askbrain/Question.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/layouts/client_main.gsp" afterPath="$PROJECT_DIR$/grails-app/views/layouts/client_main.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/turker/createAskHit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/turker/createAskHit.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/client/index.gsp" afterPath="$PROJECT_DIR$/grails-app/views/client/index.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/client/loading.gsp" afterPath="$PROJECT_DIR$/grails-app/views/client/loading.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/client/login.gsp" afterPath="$PROJECT_DIR$/grails-app/views/client/login.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/client/signup.gsp" afterPath="$PROJECT_DIR$/grails-app/views/client/signup.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/grails-gwurk-0.2/grails-app/views/layouts/turkerLayout.gsp" afterPath="$PROJECT_DIR$/lib/grails-gwurk-0.2/grails-app/views/layouts/turkerLayout.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/client/userProfile.gsp" afterPath="$PROJECT_DIR$/grails-app/views/client/userProfile.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="askbrain.iws" />
@@ -75,60 +79,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="client_main.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/client_main.gsp">
+      <file leaf-file-name="TurkerController.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/askbrain/TurkerController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="83" selection-start="1026" selection-end="1076" vertical-scroll-proportion="-4.0740743" vertical-offset="268" max-vertical-offset="1674">
+            <state line="10" column="6" selection-start="299" selection-end="299" vertical-scroll-proportion="-3.6" vertical-offset="0" max-vertical-offset="2412">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.gsp" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/client/index.gsp">
+      <file leaf-file-name="DemographicsController.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/gturkplugintester/DemographicsController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="27" selection-start="2653" selection-end="2653" vertical-scroll-proportion="0.25230768" vertical-offset="1168" max-vertical-offset="1836">
+            <state line="8" column="6" selection-start="160" selection-end="160" vertical-scroll-proportion="-5.04" vertical-offset="0" max-vertical-offset="2034">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="askbrain.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web-app/js/askbrain.js">
+      <file leaf-file-name="AskBrainMonitorService.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/services/askbrain/AskBrainMonitorService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="40" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-              <folding>
-                <marker date="1398044015452" expanded="true" signature="228:276" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery-ui-1.10.4.min.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web-app/js/jquery-ui-1.10.4.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216">
+            <state line="7" column="6" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0" vertical-offset="624" max-vertical-offset="1314">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClientController.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/controllers/askbrain/ClientController.groovy">
+      <file leaf-file-name="AskBrainWorkflowService.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/services/askbrain/AskBrainWorkflowService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="16" selection-start="2468" selection-end="2468" vertical-scroll-proportion="-9.04" vertical-offset="1376" max-vertical-offset="2196">
+            <state line="28" column="28" selection-start="973" selection-end="977" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3852">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/askbrain/User.groovy">
-          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-            <state />
-          </provider>
+      <file leaf-file-name="createAskHit.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/turker/createAskHit.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="40" selection-start="209" selection-end="209" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="486">
+            <state line="7" column="80" selection-start="328" selection-end="328" vertical-scroll-proportion="-2.4230769" vertical-offset="0" max-vertical-offset="1404">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="122" selection-start="1402" selection-end="1402" vertical-scroll-proportion="-15.333333" vertical-offset="0" max-vertical-offset="666">
               <folding />
             </state>
           </provider>
@@ -137,10 +136,28 @@
       <file leaf-file-name="BootStrap.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="0" selection-start="1201" selection-end="1201" vertical-scroll-proportion="0.0" vertical-offset="113" max-vertical-offset="882">
+            <state line="35" column="91" selection-start="1196" selection-end="1196" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="882">
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="turkerLayout.gsp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.2/grails-app/views/layouts/turkerLayout.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="6" selection-start="1362" selection-end="1362" vertical-scroll-proportion="0.45901638" vertical-offset="342" max-vertical-offset="918">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="client_main.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/client_main.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="27" selection-start="0" selection-end="3296" vertical-scroll-proportion="-10.074074" vertical-offset="142" max-vertical-offset="1674">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -158,19 +175,24 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/grails-app/domain/askbrain/Question.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/client/loading.gsp" />
         <option value="$PROJECT_DIR$/web-app/css/indexAskBrain.css" />
         <option value="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/layouts/client_main.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/client/userProfile.gsp" />
         <option value="$PROJECT_DIR$/web-app/js/askbrain.js" />
-        <option value="$PROJECT_DIR$/grails-app/views/client/login.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/client/signup.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/askbrain/ClientController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/askbrain/User.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/client/loading.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/client/login.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/layouts/client_main.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/client/index.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/domain/askbrain/Question.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/askbrain/ClientController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/client/userProfile.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/services/askbrain/AskBrainWorkflowService.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/layouts/turker_main.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/turker/createAskHit.gsp" />
+        <option value="$PROJECT_DIR$/lib/grails-gwurk-0.2/grails-app/views/layouts/turkerLayout.gsp" />
       </list>
     </option>
   </component>
@@ -296,6 +318,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="turker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="joe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="joe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -350,25 +394,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="joe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="joe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
+              <option name="myItemId" value="services" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -390,7 +416,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="domain" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -408,7 +434,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="domain" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -719,12 +745,12 @@
       <workItem from="1397860059661" duration="10954000" />
       <workItem from="1397974817867" duration="8061000" />
       <workItem from="1398017146576" duration="11211000" />
-      <workItem from="1398035498041" duration="6374000" />
+      <workItem from="1398035498041" duration="19640000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79725000" />
+    <option name="totallyTimeSpent" value="92991000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -765,12 +791,12 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24919957" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22395833" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22395833" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0890411" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16862327" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32916668" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39895833" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18409818" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -802,65 +828,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/askbrain/Question.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="27" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="720">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/client/userProfile.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="226" selection-end="226" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/client/login.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="7" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="420">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/client/signup.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="0" selection-start="1964" selection-end="1964" vertical-scroll-proportion="0.0" vertical-offset="870" max-vertical-offset="1380">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/askbrain/ClientController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="9" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="1740">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="10" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="765" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="1079" selection-end="1079" vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="645">
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/askbrain/User.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="44" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365" />
@@ -978,16 +945,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/turker/index.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="10" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765" />
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/7.0.50/tomcat-embed-core-7.0.50.jar!/org/apache/catalina/core/ApplicationHttpRequest.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="28" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.33128834" vertical-offset="267" max-vertical-offset="1755" />
@@ -996,16 +953,6 @@
     <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2430" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/askbrain/Question.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="27" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0" vertical-offset="31" max-vertical-offset="720">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web-app/css/indexAskBrain.css">
@@ -1032,30 +979,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/client/loading.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="17" selection-start="251" selection-end="251" vertical-scroll-proportion="-5.5384617" vertical-offset="0" max-vertical-offset="486">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web-app/js/jquery-ui-1.10.4.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="676">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/client/userProfile.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="306" selection-end="306" vertical-scroll-proportion="0.29356357" vertical-offset="101" max-vertical-offset="918">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/askbrain/TurkerController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="6" selection-start="299" selection-end="299" vertical-scroll-proportion="-0.13533835" vertical-offset="180" max-vertical-offset="2412">
           <folding />
         </state>
       </provider>
@@ -1064,7 +990,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="40" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
           <folding>
-            <marker date="1398044015452" expanded="true" signature="228:276" placeholder="{...}" />
+            <marker date="1398044015452" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -1072,20 +998,6 @@
     <entry file="file://$PROJECT_DIR$/grails-app/views/index.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2304">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/client/login.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="7" selection-start="507" selection-end="507" vertical-scroll-proportion="3.4615386" vertical-offset="540" max-vertical-offset="1494">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/client/signup.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="47" selection-start="1267" selection-end="1267" vertical-scroll-proportion="-2.4146342" vertical-offset="576" max-vertical-offset="1602">
           <folding />
         </state>
       </provider>
@@ -1137,16 +1049,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/askbrain/ClientController.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/client/loading.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="16" selection-start="2468" selection-end="2468" vertical-scroll-proportion="-9.04" vertical-offset="1376" max-vertical-offset="2196">
+        <state line="5" column="4" selection-start="86" selection-end="86" vertical-scroll-proportion="-1.7307693" vertical-offset="0" max-vertical-offset="522">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/client_main.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/client/login.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="83" selection-start="1026" selection-end="1076" vertical-scroll-proportion="-4.0740743" vertical-offset="268" max-vertical-offset="1674">
+        <state line="15" column="0" selection-start="250" selection-end="250" vertical-scroll-proportion="-5.1923075" vertical-offset="0" max-vertical-offset="1512">
           <folding />
         </state>
       </provider>
@@ -1161,18 +1073,124 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/askbrain/Question.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="17" selection-start="340" selection-end="340" vertical-scroll-proportion="0.3962264" vertical-offset="0" max-vertical-offset="846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/askbrain/ClientController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="37" selection-start="1233" selection-end="1233" vertical-scroll-proportion="-10.04" vertical-offset="559" max-vertical-offset="2304">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/client/signup.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="132" selection-start="2373" selection-end="2465" vertical-scroll-proportion="0.3088" vertical-offset="977" max-vertical-offset="1602">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/client/userProfile.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="29" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.30407524" vertical-offset="616" max-vertical-offset="1872">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/turker/index.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="432">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/gturkplugintester/DemographicsController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="6" selection-start="160" selection-end="160" vertical-scroll-proportion="-5.04" vertical-offset="0" max-vertical-offset="2034">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/askbrain/AskBrainMonitorService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="6" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0" vertical-offset="624" max-vertical-offset="1314">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/askbrain/AskBrainWorkflowService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="28" selection-start="973" selection-end="977" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3852">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/client/index.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="144" selection-start="2727" selection-end="2732" vertical-scroll-proportion="1.9024" vertical-offset="89" max-vertical-offset="1926">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/askbrain/TurkerController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="6" selection-start="299" selection-end="299" vertical-scroll-proportion="-3.6" vertical-offset="0" max-vertical-offset="2412">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/images/grails_logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="122" selection-start="1402" selection-end="1402" vertical-scroll-proportion="-15.333333" vertical-offset="0" max-vertical-offset="666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="46" selection-start="625" selection-end="625" vertical-scroll-proportion="0.29565218" vertical-offset="120" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/turker/createAskHit.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="80" selection-start="328" selection-end="328" vertical-scroll-proportion="-2.4230769" vertical-offset="0" max-vertical-offset="1404">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/client_main.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="27" selection-start="0" selection-end="3296" vertical-scroll-proportion="-10.074074" vertical-offset="142" max-vertical-offset="1674">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="1201" selection-end="1201" vertical-scroll-proportion="0.0" vertical-offset="113" max-vertical-offset="882">
+        <state line="35" column="91" selection-start="1196" selection-end="1196" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="882">
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/client/index.gsp">
+    <entry file="file://$PROJECT_DIR$/lib/grails-gwurk-0.2/grails-app/views/layouts/turkerLayout.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="27" selection-start="2653" selection-end="2653" vertical-scroll-proportion="0.25230768" vertical-offset="1168" max-vertical-offset="1836">
+        <state line="33" column="6" selection-start="1362" selection-end="1362" vertical-scroll-proportion="0.45901638" vertical-offset="342" max-vertical-offset="918">
           <folding />
         </state>
       </provider>

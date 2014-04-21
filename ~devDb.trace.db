@@ -1,0 +1,75 @@
+04-21 01:29:30 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "ANSWER" not found; SQL statement:
+alter table answer drop constraint FKABCA3FBEB0A752CB [42102-173]
+04-21 01:29:30 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "ASSIGNMENT_VIEW" not found; SQL statement:
+alter table assignment_view drop constraint FK525BA4D74FB50574 [42102-173]
+04-21 01:29:30 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "HIT_VIEW" not found; SQL statement:
+alter table hit_view drop constraint FKB14CA3D17D4B7564 [42102-173]
+04-21 01:29:30 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "MIXED_ANSWER" not found; SQL statement:
+alter table mixed_answer drop constraint FK3B0D5082B0A752CB [42102-173]
+04-21 01:29:30 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "MIXED_ANSWER_GRADE_VALUE" not found; SQL statement:
+alter table mixed_answer_grade_value drop constraint FKF54532CCBB845920 [42102-173]
+04-21 01:29:30 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "QUESTION" not found; SQL statement:
+alter table question drop constraint FKBA823BE65F011D2B [42102-173]
+04-21 01:29:30 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "QUESTION" not found; SQL statement:
+alter table question drop constraint FKBA823BE61B537CC5 [42102-173]
+04-21 01:29:30 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "SHIRO_ROLE_PERMISSIONS" not found; SQL statement:
+alter table shiro_role_permissions drop constraint FK389B46C9AE579D52 [42102-173]
+04-21 01:29:30 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "SHIRO_USER_PERMISSIONS" not found; SQL statement:
+alter table shiro_user_permissions drop constraint FK34555A9E53826132 [42102-173]
+04-21 01:29:30 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "SHIRO_USER_ROLES" not found; SQL statement:
+alter table shiro_user_roles drop constraint FKBA22105753826132 [42102-173]
+04-21 01:29:30 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "SHIRO_USER_ROLES" not found; SQL statement:
+alter table shiro_user_roles drop constraint FKBA221057AE579D52 [42102-173]
+04-21 01:29:30 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "TASK" not found; SQL statement:
+alter table task drop constraint FK36358580B3E10 [42102-173]
+04-21 01:29:30 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "TASK" not found; SQL statement:
+alter table task drop constraint FK36358527145CA5 [42102-173]
+04-21 01:29:30 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "TASK_RUN" not found; SQL statement:
+alter table task_run drop constraint FKE792D4D1479FB0CD [42102-173]
+04-21 01:29:30 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "TASK_RUN" not found; SQL statement:
+alter table task_run drop constraint FKE792D4D14A538FB7 [42102-173]
+04-21 01:29:30 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "TASK_RUN" not found; SQL statement:
+alter table task_run drop constraint FKE792D4D180B3E10 [42102-173]
+04-21 01:29:30 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "TASK_RUN" not found; SQL statement:
+alter table task_run drop constraint FKE792D4D12AD29C65 [42102-173]
+04-21 01:29:30 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "TASK_RUN" not found; SQL statement:
+alter table task_run drop constraint FKE792D4D1FEE586F0 [42102-173]
+04-21 01:29:30 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "TASK_TASK" not found; SQL statement:
+alter table task_task drop constraint FKAC863FF1DD9AF7D [42102-173]
+04-21 01:29:30 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "TASK_TASK" not found; SQL statement:
+alter table task_task drop constraint FKAC863FF2AD29C65 [42102-173]
+04-21 01:29:30 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "WORKFLOW" not found; SQL statement:
+alter table workflow drop constraint FK21BD7BF80B3E10 [42102-173]
+04-21 01:29:30 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "WORKFLOW_RUN" not found; SQL statement:
+alter table workflow_run drop constraint FK5D08CA0B7044010F [42102-173]
+04-21 01:29:30 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "WORKFLOW_RUN" not found; SQL statement:
+alter table workflow_run drop constraint FK5D08CA0B27145CA5 [42102-173]
+04-21 01:29:30 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "WORKFLOW_RUN" not found; SQL statement:
+alter table workflow_run drop constraint FK5D08CA0BF573FFAE [42102-173]
+04-21 01:29:30 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "WORKFLOW_TASK" not found; SQL statement:
+alter table workflow_task drop constraint FK441116052AD29C65 [42102-173]

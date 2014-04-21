@@ -13,7 +13,6 @@
 </head>
 
 <body>
-    <h1>Sign Up!</h1>
     <br>
     <g:hasErrors bean="${user}">
         <ul>
@@ -22,54 +21,51 @@
             </g:eachError>
         </ul>
     </g:hasErrors>
-    <strong>* Required fields</strong>
-    <br><br><br>
-    <g:form action="createUser">
-        <g:hiddenField name="isLoggedIn" value="0"/>
-        <table>
-            <tr>
-                <td><strong>*</strong></td>
-                <td>Name:</td>
-                <td><g:textField  name="firstName" type="text" value=""/></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Initial:</td>
-                <td><g:textField name="middleInitial" type="text" maxlength="1" value=""/></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Last Name:</td>
-                <td><g:textField name="lastName" type="text" value=""/></td>
-            </tr>
-            <tr>
-                <td><strong>*</strong></td>
-                <td>Email:</td>
-                <td><g:textField  name="userEmail" type="text" value="" /></td>
-            </tr>
-            <tr>
-                <td><strong>*</strong></td>
-                <td>User Name:</td>
-                <td><g:textField name="userName" type="text" value=""/></td>
-            </tr>
-            <tr>
-                <td><strong>*</strong></td>
-                <td>Password:</td>
-                <td><g:passwordField name="pw" onchange="checkPasswords()"/></td>
-            </tr>
-            <tr>
-                <td><strong>*</strong></td>
-                <td>Confirm Password:</td>
-                <td><g:passwordField name="conPw" onchange="checkPasswords()"/></td>
 
-            </tr>
-        </table>
-        <strong name="passwordText"></strong>
-        <br><br><br>
-        <g:submitButton name="Submit" value="Create Account"/>
-    </g:form>
-    <br><br><br>
-    <a href="index.gsp">Back to Main Page</a>
+
+
+<g:form action="createUser">
+    <h2>Please Sign Up <small>It's free for now.</small></h2>
+    <strong>* Required fields</strong>
+    <hr class="colorgraph">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="form-group">
+                <g:textField type="text" name="firstName" id="firstName" class="form-control input-lg" placeholder="First Name" tabindex="1" />
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="form-group">
+                <g:textField type="text" name="lastName" id="lastName" class="form-control input-lg" placeholder="Last Name" tabindex="2"/>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <g:textField type="text" name="userName" id="userName" class="form-control input-lg" placeholder="User Name" tabindex="3"/>
+    </div>
+    <div class="form-group">
+        <g:textField type="email" name="userEmail" id="userEmail" class="form-control input-lg" placeholder="Email Address" tabindex="4"/>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="form-group">
+                <g:passwordField type="password" name="pw" id="pw" class="form-control input-lg" placeholder="Password" tabindex="5"/>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="form-group">
+                <g:passwordField type="password" name="conPw" id="conPw" class="form-control input-lg" placeholder="Confirm Password" tabindex="6"/>
+            </div>
+        </div>
+    </div>
+
+
+    <hr class="colorgraph">
+    <div class="row">
+        <div class="col-xs-12 col-md-6"><g:submitButton type="submit" name="Submit" id="registerBtn" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="7"/></div>
+        <div class="col-xs-12 col-md-6"><g:link name="sign" action="login" class="btn btn-success btn-block btn-lg">Sign In</g:link></div>
+    </div>
+</g:form>
 
     <script>
         function checkPasswords()

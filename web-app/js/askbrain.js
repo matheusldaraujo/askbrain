@@ -4,4 +4,7 @@
 $(document).ready(function () {
     //Make navbar dynamic highlight
     $('a[href="' + this.location.pathname + '"]').parent().addClass('active');
+    $("#registerBtn").click(function(){
+//       TODO: Make ajax the registering
+    })
 });

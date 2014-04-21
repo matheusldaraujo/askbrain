@@ -81,8 +81,8 @@ class MturkMonitorService {
 
     }
 
-    def launch(Workflow w, boolean real, int iterations, Credentials credentials,Map props) {
-        WorkflowRun run = new WorkflowRun(w,credentials,real,props)
+    def launch(Workflow w, boolean bool_real, int iterations, Credentials credentials,Map props) {
+        WorkflowRun run = new WorkflowRun(w,credentials,bool_real,props)
         run.save()
         run.run(iterations)
         listeners.add(run)

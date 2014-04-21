@@ -58,6 +58,7 @@ class ClientController {
 
     def validateCredentials(){
        def user = User.findByUserNameAndPw(params.userName, params.pw)
+
        if(user){
            session.user = user
            redirect(action:"index")

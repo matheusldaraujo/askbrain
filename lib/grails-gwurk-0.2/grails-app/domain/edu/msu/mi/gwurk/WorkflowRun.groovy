@@ -26,7 +26,7 @@ class WorkflowRun implements BeatListener {
     Set<TaskRun> currentTasks = [] as Set
     Set<TaskRun> allTasks = [] as Set
     Status currentStatus
-    boolean real
+    boolean bool_real
     Set<String> retriableErrors = ["Server.ServiceUnavailable"] as Set<String>
     int retryAttempts = 10
     long retryDelayMillis = 1000
@@ -37,9 +37,9 @@ class WorkflowRun implements BeatListener {
     Workflow workflow
     Credentials credentials
 
-    WorkflowRun(Workflow w, Credentials credentials, boolean real, Map props) {
+    WorkflowRun(Workflow w, Credentials credentials, boolean bool_real, Map props) {
         workflow = w
-        this.real = real
+        this.bool_real = bool_real
         this.credentials = credentials
         globalProperties = w.taskProperties
 
@@ -67,7 +67,7 @@ class WorkflowRun implements BeatListener {
         config.setRetriableErrors(retriableErrors)
         config.setRetryAttempts(retryAttempts)
         config.setRetryDelayMillis(retryDelayMillis)
-        if (real) {
+        if (bool_real) {
             config.setServiceURL(ClientConfig.PRODUCTION_SERVICE_URL);
 
         } else {

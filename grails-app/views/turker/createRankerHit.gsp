@@ -12,7 +12,6 @@
 <body>
 <a href="#create-question" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
 <div id="create-question" class="content scaffold-create" role="main">
-    <h1><g:message code="default.create.label" args="[entityName]" /></h1>
     <g:if test="${flash.message}">
         <div class="message" role="status">${flash.message}</div>
     </g:if>
@@ -25,34 +24,40 @@
     </g:hasErrors>
 
 %{--ASK BRAIN--}%
-    <div id="container" class="center">
-        <h1>Please just give a grade to each answer for this question:</h1>
+    <div class="col-md-12 jumbotron">
+    <div id="container" class="text-center">
+        <h3>Please just give a grade to each blue answer for this question:</h3>
         <br/>
-        <h2 class="question">${question.getQuestion()}</h2>
+        <h2>${question.getQuestion()}</h2>
 
 
         <g:form action="save">
 
 
-
+            <div class="text-left">
             <g:each var="mixedAnswer" in="${mixedAnswers}">
-                <div class="gradeAnswerDiv" >Answer: <span class="gradeAnswerText">${mixedAnswer.getMixedAnswer()}</span></div>
+                <div class="gradeAnswerDiv" >
+                    <div class="text-center">
+                        Answer:
+                    </div>
+                    <div class="h4 bg-info ">${mixedAnswer.getMixedAnswer()}</div>
+                </div>
                <div class="ratioInputs">
-                <div><g:radio name="grade_${mixedAnswer.getId()}" value="5" /> Excelente</div>
-                <div><g:radio name="grade_${mixedAnswer.getId()}" value="4" /> Acceptable</div>
-                <div><g:radio name="grade_${mixedAnswer.getId()}" value="3" /> Medium</div>
-                <div><g:radio name="grade_${mixedAnswer.getId()}" value="2" /> Poor</div>
-                <div><g:radio name="grade_${mixedAnswer.getId()}" value="1" /> Trash</div>
+                <div class="h4"><g:radio name="grade_${mixedAnswer.getId()}" value="5" /> Excelente</div>
+                <div class="h4"><g:radio name="grade_${mixedAnswer.getId()}" value="4" /> Acceptable</div>
+                <div class="h4"><g:radio name="grade_${mixedAnswer.getId()}" value="3" /> Medium</div>
+                <div class="h4"><g:radio name="grade_${mixedAnswer.getId()}" value="2" /> Poor</div>
+                <div class="h4"><g:radio name="grade_${mixedAnswer.getId()}" value="1" /> Trash</div>
                </div>
             </g:each>
-
+            </div>
 
 
             <g:hiddenField name="question_id" value="${question.getId()}" />
-            <g:submitButton name="Submit" />
+            <g:submitButton name="Submit" class="btn btn-primary btn-lg"  />
         </g:form>
     </div>
-
+    </div>
 
 </div>
 </body>
